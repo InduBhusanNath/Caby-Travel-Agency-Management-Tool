@@ -15,7 +15,7 @@ class enquiryController extends Controller
          $prospectName=$request->input('n_prospectName');
 
 
-        return response()->json([
+        return response()->json([mi
             'res'=>$pickuptime
         ]);
     }
