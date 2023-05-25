@@ -4,6 +4,7 @@
      <head>
          <title>About Us.....</title>
          <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="icon" href="../public/images/icons/caricon.png" type="image/gif" sizes="16x16">
          <meta name="description" content="Know Us"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/app.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/font.css')}}"/>
@@ -29,9 +30,11 @@
 
 <!--Banner-->
 <div class="row">
-     <div class="col-sm-12">
-        bannerjjj
+     
+     <div class="col-sm-12 padding0">
+           <img src="../public/images/banners/aboutus.png" class="img-fluid w-100">
      </div>
+     
 </div>
 <!--About Us Description-->
 <div class="row background-ghostwhite">

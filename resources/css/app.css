@@ -16,6 +16,30 @@
 .background-lightgoldenrodyellow{
       background-color: lightgoldenrodyellow;
 }
+.background-palegoldenrod{
+      background-color: palegoldenrod;
+}
+.background-aliceblue{
+      background-color: aliceblue;
+}
+.background-lemonchiffon{
+      background-color:lemonchiffon;
+}
+.background-beige{
+      background-color:beige;
+}
+.background-midnightblue{
+      background-color:midnightblue;
+}
+.background-powderblue{
+      background-color:powderblue;
+}
+.background-cornsilk{
+      background-color:cornsilk;
+}
+.color-gold{
+      color:gold;
+}
 .padding0{
      padding:0px;
 }
@@ -26,11 +50,90 @@
 .padding10{
      padding:10px;
 }
+.padding15{
+      padding:15px;
+ }
 .mobile_menu{
      position:absolute;
-     z-index:5;
+     z-index:10;
      display:none;
      top:0px;
      left:0px;
      width:100%;
+}
+.popup{
+      position:absolute;
+      display:none;
+      border:none;
+      border-radius:12px 12px 12px 12px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      background-color:lavender;
+      left:25%;
+      top:5px;
+      width:40%;
+      padding:15px;
+      z-index:15;
+}
+  
+.back_btn{
+      background-color:lavender;
+      color:darkred;
+      font-size:16px;
+      border-radius:8px 8px 8px 8px;
+      padding:5px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      text-decoration:none;    
+      
+}
+.button{
+      border:none;
+      border-radius:8px 8px 8px 8px;
+      background-image: linear-gradient(to right,lavender,aliceblue);
+      color:navy;
+      font-family:'Arial Narrow Bold', sans-serif;
+      font-weight:bold;
+      padding:5px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      cursor:pointer;
+      
+}
+.hide_btn{
+      background-color:lavender;
+      color:black;
+      font-size:14px;
+      border:1px solid red;
+      padding:1px;    
+      cursor:pointer;
+}
+.left_popup{
+      position:absolute;
+      display:none;
+      border:none;
+      border-radius:12px 12px 12px 12px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      background-color:lavender;
+      left:75%;
+      top:1px;
+      width:20%;
+      padding:15px;
+      z-index:15;
+}
+.sidepanel{
+      border-radius:12px 12px 12px 12px;
+      background-color: ghostwhite;
+      padding:10px;
+      width:100%;
+}
+.collapse_text1{
+       display:block;
+       cursor:pointer;
+       
+}
+.collapse_text2{
+      display:none;
+}
+.action{
+       text-decoration:none;
+       cursor:pointer;
+       color:black;
 }

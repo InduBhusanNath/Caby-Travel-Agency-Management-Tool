@@ -4,6 +4,7 @@
      <head>
          <title>Services.....</title>
          <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="icon" href="../public/images/icons/caricon.png" type="image/gif" sizes="16x16">
          <meta name="description" content="Know Us"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/app.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/font.css')}}"/>
@@ -29,7 +30,9 @@
 </div>
 <!--Service Page Banner-->
 <div class="row">
-      <div class="col-sm-12">Banner</div>
+      <div class="col-sm-12 padding0">
+           <img src="../public/images/banners/services.png" class="img-fluid w-100">
+      </div>
 </div>
 <!--Service Description-->
 <div class="row">
@@ -43,8 +46,8 @@
 </div>
 <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-5">
-          pic
+      <div class="col-sm-5 padding0">
+           <img src="../public/images/general/service1.png" class="img-fluid w-100">
       </div>
       <div class="col-sm-5">
            <h3>Taxi Rentals</h3>
@@ -66,11 +69,18 @@
            <p>Customized tours are another service line at Aeiety Trips.</p>
            <p>You can go for an exciting, refreshing, and wonderful tours to spectacular destinations in Assam and the North East.</p>
            <p>We will help you undergo the best experience,giving you the best value for your money and time.</p>
+           <p>Choose Us for:</p>
+                <ul>
+                    <li>Affordability</li>
+                    <li>Punctuality</li>
+                    <li>Comfort</li>
+                    <li>Customer-Centricity</li>
+                </ul>
       </section>
 
       </div>
-      <div class="col-sm-5">
-          Pic
+      <div class="col-sm-5 padding0">
+           <img src="../public/images/general/service2.png" class="img-fluid w-100">
       </div>
       <div class="col-sm-1"></div>
 </div>

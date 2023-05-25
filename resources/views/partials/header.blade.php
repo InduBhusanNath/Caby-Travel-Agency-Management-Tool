@@ -1,73 +1,67 @@
-<div class="row background-lightyellow padding10">
-     <div class="col-sm-4">
-          <img src="../public/images/logo/logo.png" class="img-responsive" alt="logo">
+<div class="row background-lemonchiffon padding10">
+     <div class="col-sm-3 text-center">
+           <span class="w-80">
+                <a href="home" style="text-decoration:none;">
+                     <img src="../public/images/logo/logo.png" class="img-fluid" alt="logo">
+                </a>
+           </span>
      </div>
-     
-      
-      <div class="col-sm-1">
-         <span  onclick="show_mobileMenu()"><i class="fa-sharp fa-solid fa-bars"></i></span>
-         <span id="mob_menu" class="mobile_menu w-100 bg-info padding10">
-             <button class="hide_btn" onclick="hide_mobile_menu()">&#10060;</button>
-                 <table class="table w-100 text-center font font-18">
-                     <tr><td>Home</td></tr>
-                     <tr><td>About Us</td></tr>
-                     <tr><td>Services</td></tr>
-                     <tr><td>Blogs</td></tr>
-                     <tr><td>Contact Us</td></tr>                    
+     <!--Mobile Menu-->
+      <div class="col-sm-2">
+      <span class="font font18 padding5" style="background-color:red;border-radius:12px 12px 12px 12px;"><a href="contactus" class="color-gold text-decoration-none">How Can We Help You?</a></span>
+           <span class="d-sm-block d-md-none" id="show_MobileMenu" onclick="showMobileMenu()"><i class="fa-sharp fa-solid fa-bars"></i></span>
+                <span id="mob_menu" class="mobile_menu bg-info padding10">
+                     <button class="hide_btn" onclick="hideMobileMenu()">&#10060;</button>
+                     <table class="table text-center font font18 w-100">
+                          <tbody>
+                               <tr><td><a href="home" class="text-decoration-none font font16">Home</a></td></tr>
+                               <tr><td><a href="aboutus" class="text-decoration-none font font16">About Us</a></td></tr> 
+                               <tr><td><a href="services" class="text-decoration-none font font16">Services</a></td></tr> 
+                               <tr><td><a href="blogs" class="text-decoration-none font font16">Blogs</a></td></tr>
+                               <tr><td><a href="contactus" class="text-decoration-none font font16">Contact Us</a></td></tr>                                         
+                          </tbody>
+                     </table>
 
-                 </table>
+           </span>
+           <script>
+               function showMobileMenu(){
+                     mob_menu.style.display="block";
+               }
+               function hideMobileMenu(){
+                     mob_menu.style.display="none";
+               }
 
-         </span>
-         <script>
-             var mob_menu=document.getElementById("mob_menu");
-             //Show Mobile Menu            
-             function show_mobileMenu(){                 
-                 mob_menu.style.display="block";
-                }
-            //Hide Mobile Menu
-
-             function hide_mobile_menu(){
-                mob_menu.style.display="none";
-             }
-
-         </script>
+           </script>
       </div>
+      <!--Horizontal Menu-->
 
-
-
-
-
-
-
-
-
-      <div class="col-sm-5">
+      <div class="col-sm-5 d-sm-none d-md-block">
+           
            <nav class="navbar navbar-expand-lg bg-transparent">
-                <div class="container-fluid">
-    
+                <div class="container-fluid">    
                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                           <div class="navbar-nav">
-                               <a class="nav-link font font20 " href="home">Home</a>&nbsp;&nbsp;
-                               <a class="nav-link font font20" href="aboutus">About Us</a>&nbsp;&nbsp;
-                               <a class="nav-link font font20" href="services">Services</a>&nbsp;&nbsp;
-                               <a class="nav-link font font20" href="blogs">Blogs</a>&nbsp;&nbsp;
-                               <a class="nav-link font font20" href="contactus">Contact Us</a>
+                               <a class="nav-link font font20 text-dark" href="home">&nbsp;Home</a>&nbsp;&nbsp;
+                               <a class="nav-link font font20 text-dark" href="aboutus">About Us</a>&nbsp;&nbsp;
+                               <a class="nav-link font font20 text-dark" href="services">Services</a>&nbsp;&nbsp;
+                               <a class="nav-link font font20 text-dark" href="blogs">Blogs</a>&nbsp;&nbsp;
+                               <a class="nav-link font font20 text-dark" href="contactus">Contact Us</a>
         
                           </div>
                      </div>
                </div>
            </nav>
       </div>
+      
 
       <div class="col-sm-2">
-         <span class="font font-14">Quick Contacts</span>
-         <br/>
-         <span class="font font-14"><i class="fa-solid fa-phone"></i>&nbsp;9395124889</span>
-         <br/>
-         <span class="font font-14"><i class="fa-brands fa-whatsapp"></i>&nbsp;9395124889</span>
-
+           <span class="font font-14">Helplines</span>
+           <br/>
+           <span class="font font-14"><i class="fa-solid fa-phone"></i>&nbsp;9395124889</span>
+           <br/>
+           <span class="font font-14"><i class="fa-brands fa-whatsapp"></i>&nbsp;9395124889</span>
+           
+           
          
-      </div>
-
-      
+      </div>      
 </div>

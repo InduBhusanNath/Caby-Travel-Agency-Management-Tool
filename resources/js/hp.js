@@ -84,7 +84,14 @@ function enquiryFormSubmit(e){
        xhr1.send(fd1);
        xhr1.onload=function(){
              var response=JSON.parse(xhr1.response);
-             res.innerHTML=response.res;
+             var flag=response.flag;
+             
+             if(flag=='1'){
+                   res.innerHTML="Request Submitted Successfully, We Will Get In Touch With You Soon.....";
+             }else if(flag=='0'){
+                   res.innerHTML="Failed To Submit Request,Try Again";
+             }
+             
        }
 
 
@@ -98,3 +105,20 @@ function enquiryFormSubmit(e){
 //Submit Enquiry-Form
 document.getElementById("prospect_request_form").addEventListener("submit",enquiryFormSubmit);
 
+//FAQs
+var collapse_text1=document.getElementsByClassName("collapse_text1");
+var collapse_text2=document.getElementsByClassName("collapse_text2");
+var c;
+for(c=0;c<collapse_text1.length;c++){
+      collapse_text1[c].addEventListener('click',function(){
+             this.classList.toggle("active");
+             var text=this.nextElementSibling;
+             if(text.style.display=='none'){
+                   text.style.display='block';
+             }else{
+                   text.style.display='none';
+             }
+
+      });
+      
+}

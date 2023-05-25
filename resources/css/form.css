@@ -85,3 +85,9 @@ select{
 .getid1{
     display: block;
 }
+.getid2{
+    display: block;
+}
+a{
+     text-decoration:none;
+}
