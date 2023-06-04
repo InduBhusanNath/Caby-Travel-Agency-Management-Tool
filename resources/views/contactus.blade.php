@@ -2,10 +2,10 @@
 <html lang="en">
 <html>
      <head>
-         <title>Contact Us.....</title>
+         <title>Aeiety Trips:Contact Us|Affordable Taxi Services</title>
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <link rel="icon" href="../public/images/icons/caricon.png" type="image/gif" sizes="16x16">
-         <meta name="description" content="Know Us"/>
+         <meta name="description" content="Contact Aeiety Trips to discuss your taxi requirements. We strive to provide excellent taxi rental services at the most affordable fares, and best experiences."/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/app.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/font.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/form.css')}}"/>
@@ -14,7 +14,7 @@
          <script src="../resources/bootstrap/js/bootstrap.min.js"></script>
 
      </head>
-     <body><div class="container-fuid">
+     <body class="background-azure"><div class="container-fuid">
 <!--Start-->
      @include('partials.header')
 <div class="row">
@@ -28,19 +28,20 @@
                      <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
                 </ol>
            </nav>
+           
      </div>
 </div>
 <!--Banner-->
 <div class="row">
       <div class="col-sm-12 padding0">
-      <img src="../public/images/banners/contactus.png" class="img-responsive w-100">
+      <img src="../public/images/banners/contactus.png" class="img-fluid w-100">
       </div>
 </div>
 <div class="row">
       <div class="col-sm-3"></div>
       <div class="col-sm-6">
            <p>&nbsp;</p>
-           <h1>Get in Touch With Us</h1>
+           <h1>Get In Touch With Us</h1>
            
       </div>
       <div class="col-sm-3"></div>    
@@ -58,10 +59,10 @@
 </div>
 <!--Contact Us Form-->
 <div class="row">
-      <div class="col-sm-2">1</div>
+      <div class="col-sm-1"></div>
       <div class="col-sm-4">
           <p>&nbsp;</p>
-          <section class="padding10 bg-info" style="border-radius:12px 12px 12px 12px;">
+          <section class="padding10 background-powderblue" style="border-radius:12px 12px 12px 12px;">
                 <h2>Send Us Your Message</h2>
                 <p><span id="res" class="res"></span></p>
                 <form id="contact_form">
@@ -87,28 +88,50 @@
           </section>  
           <p>&nbsp;</p>           
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-5">
            <section class="padding15">
+                <p>&nbsp;</p>
+                
                 <p>
-                <i class="fa-solid fa-location-dot"></i>&nbsp;14A, Nirupama Enclave,
-                Chilarai Path, Beltola,Guwahati:781029
+                    <span class="font font22">
+                          <i class="fa-solid fa-location-dot"></i>&nbsp;14A, Nirupama Enclave,                               
+                    </span><br/>
+                     <span class="font font22">
+                          Chilarai Path, Beltola,
+                     </span></br>
+                     <span class="font font22">
+                          Guwahati:781029
+                     </span>
+                </p>
+                
+                <p>
+                     <span class="font font22">
+                          <i class="fa-solid fa-phone"></i>&nbsp;9395124889
+                     </span>
+                
                 </p>
                 <p>
-                <i class="fa-solid fa-phone"></i>1234
+                     <span class="font font22">
+                          <i class="fa-brands fa-whatsapp"></i></i>&nbsp;9395124889
+                     </span>   
+                
                 </p>
                 <p>
-                <i class="fa-brands fa-whatsapp"></i>34567
-                </p>
-                <p>
-                <i class="fa-regular fa-envelope"></i>info
-                </p>
+                     <span class="font font22">
+                          <i class="fa-regular fa-envelope"></i>&nbsp;info@aeiety.com
+                     </span> 
+               </p> 
            </section>
       </div>
-      <div class="col-sm-2">2</div>
+      <div class="col-sm-2">
+          
+      </div>
 </div>
      
 
      @include('partials.footer')
+     
+
 <!--End-->
      </div>
 <!--JavaScript Files--><script src="../resources/js/contactus.js"></script>

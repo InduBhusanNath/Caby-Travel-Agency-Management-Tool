@@ -1,3 +1,5 @@
+
+
 <div class="row background-lemonchiffon padding10">
      <div class="col-sm-3 text-center">
            <span class="w-80">
@@ -9,6 +11,8 @@
      <!--Mobile Menu-->
       <div class="col-sm-2">
       <span class="font font18 padding5" style="background-color:red;border-radius:12px 12px 12px 12px;"><a href="contactus" class="color-gold text-decoration-none">How Can We Help You?</a></span>
+                
+
            <span class="d-sm-block d-md-none" id="show_MobileMenu" onclick="showMobileMenu()"><i class="fa-sharp fa-solid fa-bars"></i></span>
                 <span id="mob_menu" class="mobile_menu bg-info padding10">
                      <button class="hide_btn" onclick="hideMobileMenu()">&#10060;</button>
@@ -55,11 +59,15 @@
       
 
       <div class="col-sm-2">
-           <span class="font font-14">Helplines</span>
+           <span class="font font-12"><i class="fa-solid fa-headphones"></i>&nbsp;Helplines</span>
            <br/>
            <span class="font font-14"><i class="fa-solid fa-phone"></i>&nbsp;9395124889</span>
            <br/>
            <span class="font font-14"><i class="fa-brands fa-whatsapp"></i>&nbsp;9395124889</span>
+           
+           <span  class="font font-16 lead whatsapp ">
+                <a  href="https://wa.me/918638576314?text=Most%20Affordable%20Taxi%20Rental%20Services%20With%Best%20Quality" class="text-decoration-none"><img src="../public/images/icons/whatsapp.png" class="img-fluid" alt="Whatsapp"></a>
+           </span>
            
            
          

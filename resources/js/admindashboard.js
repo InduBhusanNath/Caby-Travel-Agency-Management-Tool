@@ -16,9 +16,14 @@ function hideLeftPopup(){
 hideButton.onclick=hideLeftPopup;
 
 //Dasboard Operations
+var content_space=document.getElementById("content_space");
 var dashboardAdmin=document.getElementById("dashboardAdmin");
 var adm_db=document.getElementById("adm_db");
 var requests_db=document.getElementById("requests_db");
+
+function loadPage(url){                   
+           content_space.innerHTML=url;    
+}
 
 
 //Default Page
@@ -27,12 +32,7 @@ window.addEventListener('load',function(){
 });
 
 
-adm_db.addEventListener('click',function(){          
-     dashboardAdmin.innerHTML="<object data='adminDashboardPage'></object>";    
-});
-requests_db.addEventListener('click',function(){          
-     dashboardAdmin.innerHTML="<object data='adminDashboardPage'></object>";    
-});
+
 
 
 

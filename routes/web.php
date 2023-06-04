@@ -8,6 +8,7 @@ use App\Http\Controllers\loginController;
 use App\Http\Controllers\adminLogoutController;
 use App\Http\Controllers\adminDashboardController;
 use App\Http\Controllers\adminDashboardViewController;
+use App\Http\Controllers\processTaxiBookingController;
 
 
 
@@ -60,6 +61,12 @@ Route::get('/adminLogout',[adminLogoutController::class,'adminLogout']);
 Route::get('/adminDashboardPage',[adminDashboardViewController::class,'adminDashboardView']);
 Route::get('/show_contactusMessages',[contactusController::class,'showContactusMessages']);
 Route::get('/taxiBooking',[taxiBookingController::class,'showRequestData']);
+Route::get('/process_taxiBooking/{id}',[taxiBookingController::class,'showTaxiBookingRequestStatus']);
+
+
+
+
+
 //POST Routes
 Route::post('/insert_enquiryData',[taxiBookingController::class,'insertRequestData']);
 Route::post('/insert_contactusData',[contactusController::class,'insertContactusData']);
@@ -74,6 +81,19 @@ Route::post('/admin_rights',[loginController::class,'grant_adminRights']);
 //Route::post('/adminDashboard',[adminDashboardController::class,'showAdminDashboardPage']);
 Route::post('/user_delete_data',[contactusController::class,'userDeleteData']);    
 Route::post('/delete_contactus_message',[contactusController::class,'deleteContactUsMessage']);
+Route::post('/set_taxibooking_edit_data',[taxiBookingController::class,'setTaxiBookingEditData']);
+Route::post('/edit_taxibooking_data',[taxiBookingController::class,'editTaxiBookingData']);
+Route::post('/set_taxibooking_delete_data',[taxiBookingController::class,'setTaxiBookingDeleteData']);
+Route::post('/delete_taxibooking_data',[taxiBookingController::class,'deleteTaxiBookingData']);
+Route::post('/update_taxitrip',[taxiBookingController::class,'updateTaxiTripDetails']);
+Route::post('/update_client',[taxiBookingController::class,'updateClientDetails']);
+Route::post('/update_address',[taxiBookingController::class,'updateClientAddresses']);
+Route::post('/update_taxi',[taxiBookingController::class,'updateTaxiDetails']);
+Route::post('/update_driver',[taxiBookingController::class,'updateDriverDetails']);
+Route::post('/update_fare1',[taxiBookingController::class,'updateFare1Details']);
+Route::post('/update_fare2',[taxiBookingController::class,'updateFare2Details']);
+Route::post('/update_booking_status',[taxiBookingController::class,'updateBookingStatus']);
+Route::post('/update_trip_status',[taxiBookingController::class,'updateTripStatus']);
 
 
 

@@ -2,10 +2,10 @@
 <html lang="en">
 <html>
      <head>
-         <title>Services.....</title>
+         <title>AeietyTrips|Taxi|Cab|Rental|Services|Guwahati</title>
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <link rel="icon" href="../public/images/icons/caricon.png" type="image/gif" sizes="16x16">
-         <meta name="description" content="Know Us"/>
+         <meta name="description" content="AeietyTrips offers the most affordable taxi rental services, with the best quality in terms of experience, timeliness, and customer-centricity."/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/app.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/font.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/form.css')}}"/>
@@ -14,7 +14,7 @@
          <script src="../resources/bootstrap/js/bootstrap.min.js"></script>
 
      </head>
-     <body><div class="container-fuid">
+     <body class="background-azure"><div class="container-fuid">
 <!--Start-->
      @include('partials.header')
 <div class="row">
@@ -36,11 +36,13 @@
 </div>
 <!--Service Description-->
 <div class="row">
-      <div class="col-sm-1">1</div>
+      <div class="col-sm-1"></div>
       <div class="col-sm-10">
-           <section class="text-center"><h1>What We Do</section>
+           <p>&nbsp;</p>
+           <section class="text-center"><h1>Know What We Have For You</h1></section>
            <br/>
-           <section class="text-center"><h2>Striving To Maximize Satisfaction And Values for Customers</h2></section>           
+           <section class="text-center"><h2>Striving To Maximize Satisfaction And Values for Customers</h2></section>   
+           <p>&nbsp;</p>        
       </div>
       <div class="col-sm-1">1</div>
 </div>
@@ -50,7 +52,7 @@
            <img src="../public/images/general/service1.png" class="img-fluid w-100">
       </div>
       <div class="col-sm-5">
-           <h3>Taxi Rentals</h3>
+           <h3>&#9758;&nbsp;TAXI RENTALS</h3>
            <section class="font font24">
                 <p>At Aeiety Trips, we provide efficient and trusted taxi rental services.</p>
                 <p>You can get small, medium, and large cars for local or outstation trips within Assam and the North Eastern region of India at affordable fares.</p>
@@ -62,9 +64,10 @@
       <div class="col-sm-1"></div>
 </div>
 <div class="row">
+      <p>&nbsp;</p>
       <div class="col-sm-1"></div>
       <div class="col-sm-5">
-      <h3>Tour Packages</h3>
+      <h3>&#9755;&nbsp;TOUR PACKAGES</h3>
       <section class="font font24">
            <p>Customized tours are another service line at Aeiety Trips.</p>
            <p>You can go for an exciting, refreshing, and wonderful tours to spectacular destinations in Assam and the North East.</p>

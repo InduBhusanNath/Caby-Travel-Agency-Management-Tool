@@ -2,10 +2,10 @@
 <html lang="en">
 <html>
      <head>
-         <title>About Us.....</title>
+         <title>About AeietyTrips|Affordable|Friendly|Taxi|Cab|Guwahati</title>
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <link rel="icon" href="../public/images/icons/caricon.png" type="image/gif" sizes="16x16">
-         <meta name="description" content="Know Us"/>
+         <meta name="description" content="AeietyTrips is an excellent rental cab service provider, dedicated to serve customers with the best taxi services at affordable fares."/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/app.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/font.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/form.css')}}"/>
@@ -38,15 +38,16 @@
 </div>
 <!--About Us Description-->
 <div class="row background-ghostwhite">
+     <p>&nbsp;</p>
      <div class="col-sm-1">&nbsp;</div>
      <div class="col-sm-10">
          <section class="text-center"><h1>A Bit About Us</h1></section>
          <br/>
          <section class="text-center"><h2>Clients Are At The Center Of Everything We Do</h2></section>
          <br/>
-         <section class="text-left font font18">
+         <section class="text-left font font22">
          <p>
-         Aeiety Trips is a provider of the most affordable taxi services, which are dicated by the three principles:safety, punctuality, and customer-centricity.
+         Aeiety Trips is a trusted provider of the most affordable taxi services, which are dicated by the three principles:safety, punctuality, and customer-centricity.
          We provide small, medium, and large cars at reasonable and affordable fares for different types of trips.
          </p>
          <p>
@@ -62,7 +63,7 @@
       <div class="col-sm-1">&nbsp;</div>
       <div class="col-sm-5">
            <h3>Vision</h3>
-           <section class="font font18">
+           <section class="font font22">
                 <ul>
                      <li>To be the most preffered rental taxi services provider in the North Eastern region of India</li>                     
                 </ul>
@@ -72,9 +73,9 @@
       </div>
       <div class="col-sm-5">
            <h3>Mission</h3>
-           <section class="font font18">
+           <section class="font font22">
                 <ul>
-                     <li>To serve clients with the most satisfyting rental taxi service at affordable fares</li>
+                     <li>To serve clients with the most satisfyting rental taxi services at affordable fares</li>
                      <li>Create and implement innovative solutions to give customers the best value of their money</li>
                 </ul>
            </section>
@@ -82,6 +83,7 @@
       <div class="col-sm-1">&nbsp;</div>
 </div>
 <div class="row background-ghostwhite">
+      <p>&nbsp;</p>
       <div class="col-sm-1">&nbsp;</div>
       <div class="col-sm-10">
            <p>&nbsp;</p>
@@ -89,6 +91,7 @@
            <p>&nbsp;</p>
       </div>
       <div class="col-sm-1">&nbsp;</div>
+      <p>&nbsp;</p>
 </div>
 
      

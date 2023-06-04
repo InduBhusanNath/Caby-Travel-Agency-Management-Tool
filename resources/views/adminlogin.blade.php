@@ -13,19 +13,29 @@
          <script src="../resources/bootstrap/js/bootstrap.min.js"></script>
 
      </head>
-     <body><div class="container-fuid">
+     <body class="bg-light"><div class="container-fuid">
+<div class="row"> 
+      <div class="col-sm-4">
+           <section class="text-center">
+                <img src="../public/images/logo/logo.png" class="img-fluid w-80">
+           </section>
+      </div>
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+           <section>
+                <i><?php echo "Today is:&nbsp;".date('d-m-Y'); ?></i>          
+           </section>
+      </div>
+</div>
 
 <div class="row">
-     <div class="col-sm-8">
-         <img src="../public/images/general/admin.png" class="img-responsive w-100">
+     <div class="col-sm-4">
+         
      </div>
      <div class="col-sm-4 padding10">
-         <section>
-           <?php echo "Today is:".date('d-m-Y'); ?>
-           <img src="../public/images/logo/logo.png" class="img-responsive w-100">
-         </section>
          
-         <section class="padding10 bg-info" style="border-radius:12px 12px 12px 12px;">
+         <p>&nbsp;</p>
+         <section class="padding10 bg-light" style="border-radius:12px 12px 12px 12px;">
                 <h2>ADMIN LOGIN</h2>
                 <p><span id="res1" class="res"></span></p>
                 <form id="adminlogin_form">
@@ -47,11 +57,14 @@
                           <button type="submit" class="submit">LOGIN</button>
                      </div>
                 </form> 
+                <p>&nbsp;</p>
                 <p class="font font14">Forgot Password</p>    
           </section>
 
      </div>
+     <div class="col-sm-4"></div>
 </div>
+
 
 
      </div></body><script src="../resources/js/adminlogin.js"></script></html>
