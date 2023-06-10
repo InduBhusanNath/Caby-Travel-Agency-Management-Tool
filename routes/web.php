@@ -9,6 +9,7 @@ use App\Http\Controllers\adminLogoutController;
 use App\Http\Controllers\adminDashboardController;
 use App\Http\Controllers\adminDashboardViewController;
 use App\Http\Controllers\processTaxiBookingController;
+use App\Http\Controllers\blogsController;
 
 
 
@@ -62,6 +63,7 @@ Route::get('/adminDashboardPage',[adminDashboardViewController::class,'adminDash
 Route::get('/show_contactusMessages',[contactusController::class,'showContactusMessages']);
 Route::get('/taxiBooking',[taxiBookingController::class,'showRequestData']);
 Route::get('/process_taxiBooking/{id}',[taxiBookingController::class,'showTaxiBookingRequestStatus']);
+Route::get('/blogPosts',[blogsController::class,'blogPostPage']);
 
 
 
@@ -94,6 +96,14 @@ Route::post('/update_fare1',[taxiBookingController::class,'updateFare1Details'])
 Route::post('/update_fare2',[taxiBookingController::class,'updateFare2Details']);
 Route::post('/update_booking_status',[taxiBookingController::class,'updateBookingStatus']);
 Route::post('/update_trip_status',[taxiBookingController::class,'updateTripStatus']);
+Route::post('/post_blog',[blogsController::class,'insertBlog']);
+Route::post('/set_blog_edit_data',[blogsController::class,'setBlogEditData']);
+Route::post('/edit_image1',[blogsController::class,'editImage1']);
+Route::post('/edit_blog',[blogsController::class,'editBlog']);
+Route::post('/set_blog_delete_data',[blogsController::class,'setBlogDeleteData']);
+Route::post('/delete_blog',[blogsController::class,'deleteBlog']);
+
+
 
 
 
