@@ -37,9 +37,14 @@
 .background-cornsilk{
       background-color:cornsilk;
 }
+.background-skyblue{
+       background-color: skyblue;
+}
+
 .color-gold{
       color:gold;
 }
+
 .padding0{
      padding:0px;
 }
@@ -52,6 +57,12 @@
 }
 .padding15{
       padding:15px;
+ }
+ .padding20{
+      padding:20px;
+ }
+ .padding25{
+      padding:25px;
  }
 .mobile_menu{
      position:absolute;
@@ -86,15 +97,15 @@
       
 }
 .button{
-      border:none;
-      border-radius:8px 8px 8px 8px;
-      background-image: linear-gradient(to right,lavender,aliceblue);
-      color:navy;
-      font-family:'Arial Narrow Bold', sans-serif;
-      font-weight:bold;
-      padding:5px;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      cursor:pointer;
+       border:none;
+       border-radius:8px 8px 8px 8px;
+       background-image: linear-gradient(to right,lavender,aliceblue);
+       color:navy;
+       font-family:'Arial Narrow Bold', sans-serif;
+       font-weight:bold;
+       padding:5px;
+       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       cursor:pointer;
       
 }
 .hide_btn{
@@ -137,6 +148,7 @@
        cursor:pointer;
        color:black;
 }
+
 .hidden{
        display:none;
 }
@@ -145,7 +157,10 @@
       height:100%;
 }
 .whatsapp{
-       position:fixed;
+       position:fixed;      
        
-       
+}
+.collapse_text2{
+       background-color: lightyellow;
+       padding:10px;
 }

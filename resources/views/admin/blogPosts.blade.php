@@ -2,7 +2,7 @@
 <html lang="en">
 <html>
      <head>
-         <title>Aeiety Trips:Affordable Taxi|Taxi Services in Guwahati.....</title>
+         <title>Aeiety Trips:Blogs|Cab Services|Guwahati.....</title>
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <meta name="description" content="Know Us"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/app.css')}}"/>
@@ -17,20 +17,43 @@
          
 
      </head>
-     <body><div class="container-fuid">
+     <body class="background-ghostwhite"><div class="container-fuid">
         <!--Start-->
      
 <div class="row">
-     <div class="col-sm-4">
-        <button id="showBlogPostForm" class="button">&#10133;<br>Blog</button>
+     <div class="col-sm-4 padding10">
+         <span><a href="adminDashboard" class="action font font22">&#129152;DashBoard</a></span>
      </div>
-     <div class="col-sm-4">2</div>
-     <div class="col-sm-4">3</div>
+     <div class="col-sm-4 padding10"></div>
+        
+     
+     
+     <div class="col-sm-4 padding10">
+         <section class="font font18">
+             <i class="fa-solid fa-user"></i>
+             <?php 
+                 echo "<span id='adminShowProfile'>[ADMIN]&nbsp;".$adminuser=session('adminuser')."</span>";
+             ?>
+         
+             <i class="fa-solid fa-right-from-bracket"></i>
+             <a href='adminLogout' class="font font18">LogOut</a>
+         </section>
+     </div>
+</div>
+<div class="row">
+     <div class="col-sm-4 padding10">
+          <p>&nbsp;</p>
+          <button id="showBlogPostForm" class="button">&#10133;Blog</button>
+     </div>
+     <div class="col-sm-4 padding10">
+         <h3>BLOG POSTS</h3>
+     </div>
+     <div class="col-sm-4 padding10"></div>
 </div>
 <div class="row">
     <div class="col-sm-12">
          <form>
-            <input type="text" id="token_blogPosts" value="<?php echo csrf_token(); ?> "/>
+            <input type="hidden" id="token_blogPosts" value="<?php echo csrf_token(); ?> "/>
          </form>
          <table class="table table-borderless" font font18">
              <thead>
@@ -42,6 +65,7 @@
                      <th scope="col"  class="text-center">OTHERS</th>
                      <th scope="col"  class="text-center">IMAGE PATH</th>
                      <th scope="col"  class="text-center">BLOG BODY</th>
+                     <th scope="col"  class="text-center">META TAG</th>
                      <th scope="col"  class="text-center">UPDATE</th>
                      <th scope="col"  class="text-center">DELETE</th>
                  </tr>
@@ -57,6 +81,7 @@
                      <td>{{$row->others}}</td>
                      <td>{{$row->image_path1}}</td>
                      <td>{{$row->blog_body}}</td>
+                     <td>{{$row->blog_meta_tag}}</td>
                      <td ><a href='javascript:void(0);' class="getid text-decoration-none;" name="{{$row->id}}">&#128393;</a></td>
                      <td><a href='javascript:void(0);' class="getid1 text-decoration-none;" name="{{$row->id}}">&#10060;</a></td>
                  </tr>
@@ -69,6 +94,7 @@
 
 
          </table>
+         {{$showBlogs->links()}}
          
     </div>
 </div>
@@ -106,6 +132,10 @@
              <div class="form-group">
                  <label for="blog_body">Blog Body</label>
                  <textarea  class="form-control" id="blog_body" name="n_blog_body"></textarea>
+             </div>
+             <div class="form-group">
+                 <label for="blog_meta">Meta Description</label>
+                 <textarea  class="form-control" id="blog_meta" name="n_blog_meta"></textarea>
              </div>
              <div class="form-group">
                  <button type="submit" class="submit">ADD BLOG</button>                 
@@ -165,12 +195,16 @@
                  <textarea  class="form-control" id="edit_blog_body" name="n_edit_blog_body"></textarea>
              </div>
              <div class="form-group">
+                 <label for="edit_blog_meta">Meta Description</label>
+                 <textarea  class="form-control" id="edit_blog_meta" name="n_edit_blog_meta"></textarea>
+             </div>
+             <div class="form-group">
                  <button type="submit" class="submit">EDIT BLOG</button>                 
              </div>
              <script>
                    
                    ClassicEditor
-                         .create(document.querySelector('#edit_blog_body'))                         
+                         .create(document.querySelector('#edit_blog_body').updateElement())                         
                          .catch(error => {
                                  console.error( error );
                             } );

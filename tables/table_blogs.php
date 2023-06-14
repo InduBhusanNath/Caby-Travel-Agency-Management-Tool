@@ -8,7 +8,8 @@ require 'database_connect.php';
                       author VARCHAR(255) NULL,
                       others VARCHAR(255) NULL,
                       image_path1 VARCHAR(255) NULL,
-                      blog_body VARCHAR(255) NULL
+                      blog_body LONGTEXT NULL,
+                      blog_meta_tag LONGTEXT NULL
                       
           )";
   

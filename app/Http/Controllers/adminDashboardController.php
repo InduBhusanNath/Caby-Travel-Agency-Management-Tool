@@ -6,7 +6,9 @@ use Illuminate\Http\Request;
 
 class adminDashboardController extends Controller
 {
-     public function showAdminDashboardPage(){
-         return redirect()->route('admin_db',['test'=>'1']);
-     }
+     public function showAdminDashboard(){
+        return view('/admin/adminDashboard');
+     }  
+     
+    
 }

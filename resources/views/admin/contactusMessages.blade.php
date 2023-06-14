@@ -2,9 +2,8 @@
 <html lang="en">
 <html>
      <head>
-         <title>Contact Us.....</title>
+         <title>Contact Us Messages.....</title>
          <meta name="viewport" content="width=device-width, initial-scale=1">
-         <meta name="description" content="Know Us"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/app.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/font.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/form.css')}}"/>
@@ -13,17 +12,37 @@
          <script src="../resources/bootstrap/js/bootstrap.min.js"></script>
 
      </head>
-     <body><div class="container-fuid">
+     <body class="background-ghostwhite"><div class="container-fuid">
 <div class="row">
-     <div class="col-sm-2"></div>
-     <div class="col-sm-8">
-          <h2>Contact Us Messages</h2>
+     <div class="col-sm-2">
+     <span><a href="adminDashboard" class="action font font22">&#129152;DashBoard</a></span>
      </div>
-     <div class="col-sm-2"></div>
+     <div class="col-sm-6">
+          
+     </div>
+     <div class="col-sm-4">
+         <section class="font font18">
+             <i class="fa-solid fa-user"></i>
+             <?php 
+                 
+                 echo "<span id='adminShowProfile'>[ADMIN]&nbsp;".$adminuser=session('adminuser')."</span>";
+             ?>
+         
+             <i class="fa-solid fa-right-from-bracket"></i>
+             <a href='adminLogout' class="font font18">LogOut</a>
+         </section>
+     </div>
+</div>
+<div class="row">
+     <div class="col-sm-4"></div>
+     <div class="col-sm-4">
+          <h2>CONTACT US MESSAGES</h2>
+     </div>
+     <div class="col-sm-4"></div>
 </div>
 <div class="row">
      <div class="col-sm-12">
-         <table class="table">
+         <table class="table text-center font font18">
              <thead>
                  <th scope="col">DATE</th>
                  <th scope="col">NAME</th>

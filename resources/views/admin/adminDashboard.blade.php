@@ -15,6 +15,7 @@
      </head>
      <body class="bg-light"><div class="container-fuid">
 <!--Upper Section-->
+
 <div class="row">
      <div class="col-sm-4"></div>
      <div class="col-sm-4"></div>
@@ -32,6 +33,7 @@
      </div>
 </div>
 <!--Body Section-->
+
 <div class="row">
      <!--Admin Side Panel-->
      <div class="col-sm-3 padding10">
@@ -46,11 +48,16 @@
          <section class="sidepanel font font24">
              <table class="table">
                  <tbody>
-                     <tr><td><span id="adm_db"><i class="fa-solid fa-house"></i>&nbsp;Dashboard</span></td></tr>
-                     <tr><td><span id="requests_db" onclick="alert('hi);"><i class="fa-solid fa-code-pull-request"></i>&nbsp;Requests</span></td></tr>
-                     <tr><td><a href="javascript:void(0);" onclick="loadPage('users')">Test</a></td></tr>
+                     <tr><td><a href="javascript:void(0);" class="action" id="adm_db" onclick="loadPage('adminDashboardPage')"><span><i class="fa-solid fa-house"></i>&nbsp;Dashboard</span></a></td></tr>
+                     <tr><td><a href="taxiBooking" class="action"><i class="fas fa-clipboard-list"></i></i>&nbsp;Taxi Bookings</span></a></td></tr>
+                     <tr><td><a href="show_contactusMessages" class="action"><i class="fas fa-inbox"></i>&nbsp;Contact Us Messages</span></a></td></tr>
+                        
+                     
+                     
+                     
                  </tbody>
              </table>
+             
              
          
 
@@ -58,8 +65,7 @@
      </div>
      <!--Admin Dashboard-->
      <div class="col-sm-9">
-         <section id="content_space"></section>
-        
+         <section id="content_space"></section>        
      </div>
 </div>
 <!--Left Popuo-->

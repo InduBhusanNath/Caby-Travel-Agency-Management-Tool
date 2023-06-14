@@ -2,9 +2,9 @@
 <html lang="en">
 <html>
      <head>
-         <title>Aeiety Trips:Affordable Taxi|Taxi Services in Guwahati.....</title>
+         <title>Admin User Management.....</title>
          <meta name="viewport" content="width=device-width, initial-scale=1">
-         <meta name="description" content="Know Us"/>
+         
          <link rel="stylesheet" href="{{URL::asset('../resources/css/app.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/font.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/form.css')}}"/>
@@ -18,16 +18,36 @@
         <!--Start-->
      
 <div class="row">
-     <div class="col-sm-4">
-        <button id="showUserForm" class="button">&#10133;<br>Users</button>
+     <div class="col-sm-4 padding10">
+         <span><a href="adminDashboard" class="action font font22">&#129152;DashBoard</a></span>
      </div>
-     <div class="col-sm-4">2</div>
-     <div class="col-sm-4">3</div>
+     <div class="col-sm-4 padding10"></div>
+     <div class="col-sm-4 padding10">
+         <section class="font font18">
+             <i class="fa-solid fa-user"></i>
+             <?php 
+                 echo "<span id='adminShowProfile'>[ADMIN]&nbsp;".$adminuser=session('adminuser')."</span>";
+             ?>
+         
+             <i class="fa-solid fa-right-from-bracket"></i>
+             <a href='adminLogout' class="font font18">LogOut</a>
+         </section>
+     </div>
 </div>
 <div class="row">
-    <div class="col-sm-12">
+     <div class="col-sm-4 padding10">
+         <button id="showUserForm" class="button">&#10133;Users</button>
+     </div>
+     <div class="col-sm-4 padding10">
+         <h2>ADMIN USER MANAGEMENT</h2>
+     </div>
+     <div class="col-sm-4 padding10"></div>
+
+</div>
+<div class="row">
+    <div class="col-sm-12 padding10">
          <form>
-            <input type="text" id="token_user" value="<?php echo csrf_token(); ?> "/>
+            <input type="hidden" id="token_user" value="<?php echo csrf_token(); ?> "/>
          </form>
          <table class="table table-borderless" font font18">
              <thead>

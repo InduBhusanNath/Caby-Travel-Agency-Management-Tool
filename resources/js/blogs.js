@@ -18,6 +18,7 @@ var category=document.getElementById("category");
 var author=document.getElementById("author");
 var others=document.getElementById("others");
 var blog_body=document.getElementById("blog_body");
+var blog_meta=document.getElementById("blog_meta");
 var image1=document.getElementById("image1");
 
 
@@ -63,7 +64,8 @@ function submit_blog_post_form(e){
      fd1.append('n_author',author.value);
      fd1.append('n_others',others.value);
      fd1.append('n_image1',image1.files[0]);
-     fd1.append('n_blog_body',blog_body.value);     
+     fd1.append('n_blog_body',blog_body.value); 
+     fd1.append('n_blog_meta',blog_meta.value);    
 
      let xhr1=new XMLHttpRequest();
      xhr1.open('POST','post_blog',true);
@@ -77,6 +79,9 @@ function submit_blog_post_form(e){
                 res1.innerHTML="Blog Uploaded Successfully.....";
            }else if(flag_blog=='0'){
                 res1.innerHTML="Could Not Upload Blog, Try Again.....";
+           }else if(flag_blog=='duplicate_image'){
+               res1.innerHTML="Image already exists, Insert a Different One.....";
+
            }
            
      }
@@ -107,6 +112,7 @@ for(i=0;i<getId.length;i++){
                 var author=responseEditBlog.author;
                 var others=responseEditBlog.others;
                 var blog_body=responseEditBlog.blog_body;
+                var blog_meta_tag=responseEditBlog.blog_meta_tag;
                 
 
 
@@ -126,6 +132,7 @@ for(i=0;i<getId.length;i++){
                 var edit_author=document.getElementById("edit_author");
                 var edit_others=document.getElementById("edit_others");
                 var edit_blog_body=document.getElementById("edit_blog_body");
+                var edit_blog_meta=document.getElementById("edit_blog_meta");
                 
                 
                 //Set Field Values
@@ -136,7 +143,8 @@ for(i=0;i<getId.length;i++){
                 edit_category.value=category;
                 edit_author.value=author;
                 edit_others.value=others;
-                edit_blog_body.textContent=blog_body;
+                edit_blog_body.value=blog_body;
+                edit_blog_meta.value=blog_meta_tag;
                 
 
 
@@ -181,14 +189,17 @@ for(i=0;i<getId.length;i++){
                           if(flag_image1edit=='1'){ 
                                res2.innerHTML="Image Updated Successfully.....";
                           }else if(flag_image1edit=='0'){
-                              res2.innerHTML="Could Not Update Image, Try Again.....";
+                               res2.innerHTML="Could Not Update Image, Try Again.....";
+                          }else if(flag_image1edit=='duplicate_image'){
+                               res2.innerHTML="Image already exists,Upload a Different One.....";
+
                           }
                      }                    
 
                 }
 
                 image1EditForm.addEventListener('submit',submit_image1_edit_form);
-                //Submit Blog Edit Form
+                
                 //Submit Blog Edit Form
                 function submit_blog_edit_form(e){
                     e.preventDefault();
@@ -200,6 +211,7 @@ for(i=0;i<getId.length;i++){
                     fd3.append('n_edit_author',edit_author.value);
                     fd3.append('n_edit_others',edit_others.value);
                     fd3.append('n_edit_blog_body',edit_blog_body.value);
+                    fd3.append('n_edit_blog_meta',edit_blog_meta.value);
 
                     let xhr3=new XMLHttpRequest();
                     xhr3.open('POST','edit_blog',true);
@@ -279,7 +291,7 @@ for(j=0;j<getId1.length;j++){
                           var responseDelBlg=JSON.parse(xhr5.response);
                           var flag_delblg=responseDelBlg.flag_delblg;
                           if(flag_delblg=='1'){
-                              res4.textContent="Blog Successfully Deleted.....";
+                              question.textContent="Blog Successfully Deleted.....";
                           }else{
                                res4.textContent="Could Not Delete Blog,Try Again.....";
                           }

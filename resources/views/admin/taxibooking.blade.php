@@ -13,20 +13,41 @@
          <script src="../resources/bootstrap/js/bootstrap.min.js"></script>
 
      </head>
-     <body><div class="container-fuid">
+     <body class="background-ghostwhite"><div class="container-fuid">
 <!--Headings-->
 <div class="row">
-     <div class="col-sm-1"></div>
-     <div class="col-sm-10">
-         <h2>Taxi Bookings</h2>
+     <div class="col-sm-2 padding10">
+        <span><a href="adminDashboard" class="action font font22">&#129152;DashBoard</a></span>
      </div>
-     <div class="col-sm-1"></div>
+     <div class="col-sm-6 padding10">
+         
+     </div>
+     <div class="col-sm-4 padding10">
+         <section class="font font18">
+             <i class="fa-solid fa-user"></i>
+             <?php 
+                 
+                 echo "<span id='adminShowProfile'>[ADMIN]&nbsp;".$adminuser=session('adminuser')."</span>";
+             ?>
+         
+             <i class="fa-solid fa-right-from-bracket"></i>
+             <a href='adminLogout' class="font font18">LogOut</a>
+         </section>
+     </div>
+</div>
+<div class="row">
+     <div class="col-sm-4"></div>
+     <div class="col-sm-4">
+         <h2>TAXI BOOKINGS</h2>
+     </div>
+     <div class="col-sm-4"></div>
+
 </div>
 <!--Body-->
 <div class="row">
      <div class="col-sm-12">
          <form>
-             <input type="text" id="token_taxibooking" value="<?php echo csrf_token();?>">
+             <input type="hidden" id="token_taxibooking" value="<?php echo csrf_token();?>">
          </form>
          <table class="table font font18">
              <thead>

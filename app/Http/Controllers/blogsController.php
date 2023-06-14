@@ -11,8 +11,9 @@ class blogsController extends Controller
 {
     //Show Blog Post Page
     public function blogPostPage(Request $request){
-        $showBlogs=DB::table('table_blogs')->get();
-        return view('/admin/blogPosts',['showBlogs'=>$showBlogs]);
+         $showBlogs=DB::table('table_blogs')->get();
+         $showBlogs=DB::table('table_blogs')->paginate(3);
+         return view('/admin/blogPosts',['showBlogs'=>$showBlogs]);
     }
     //Insert Blogs
     public function insertBlog(Request $request){
@@ -20,8 +21,12 @@ class blogsController extends Controller
          $image_name=$image->getClientOriginalName();         
          $imageLocation='../public/images/blogs/'.$image_name;         
              if(file_exists($imageLocation)){
-                 unlink($imageLocation);
-                 $imagePath=$image->move('../public/images/blogs/',$image_name);
+                 
+                 return response()->json([
+                     'flag_blog'=>'duplicate_image'
+                 ]);
+                 
+                 
              }else{
                  $imagePath=$image->move('../public/images/blogs/',$image_name);
              }
@@ -35,6 +40,7 @@ class blogsController extends Controller
          $others=$request->input('n_others');
          
          $blog_body=$request->input('n_blog_body');
+         $n_blog_meta=$request->input('n_blog_meta');
          
          $insertBlog=DB::table('table_blogs')->insert([
              'entry_date'=>$entry_date,
@@ -43,7 +49,8 @@ class blogsController extends Controller
              'author'=>$author,
              'others'=>$others,
              'image_path1'=>$imagePath,
-             'blog_body'=>$blog_body
+             'blog_body'=>$blog_body,
+             'blog_meta_tag'=>$n_blog_meta
          ]);
 
          if($insertBlog){
@@ -68,10 +75,10 @@ class blogsController extends Controller
              $title=$row->title;
              $category=$row->category;
              $author=$row->author;
-             $others=$row->others;
-             
+             $others=$row->others;             
              $image_path1=$row->image_path1;
              $blog_body=$row->blog_body;
+             $blog_meta_tag=$row->blog_meta_tag;
          }
          return response()->json([
              'blg_id'=>$eid,
@@ -81,7 +88,8 @@ class blogsController extends Controller
              'category'=>$category,
              'author'=>$author,
              'others'=>$others,
-             'blog_body'=>$blog_body
+             'blog_body'=>$blog_body,
+             'blog_meta_tag'=>$blog_meta_tag
 
          ]);
      }
@@ -94,8 +102,9 @@ class blogsController extends Controller
 
          
          if(file_exists($edit_image1_existing)){
-             unlink($edit_image1_existing);
-             $edit_n_image1Path=$edit_n_image1->move('../public/images/blogs/',$edit_image1_name);
+                 return response()->json([
+                     'flag_image1edit'=>'duplicate_image'
+                 ]);
 
          } else{
             $edit_n_image1Path=$edit_n_image1->move('../public/images/blogs/',$edit_image1_name);
@@ -122,6 +131,7 @@ class blogsController extends Controller
          $edit_author=$request->input('n_edit_author');
          $edit_others=$request->input('n_edit_others');
          $edit_blog_body=$request->input('n_edit_blog_body');
+         $edit_blog_meta=$request->input('n_edit_blog_meta');
          
          $updateBlog=DB::table('table_blogs')->where('id','=',$edit_blogid)
          ->update([
@@ -129,7 +139,8 @@ class blogsController extends Controller
              'category'=>$edit_category,
              'author'=>$edit_author,
              'others'=>$edit_others,
-             'blog_body'=>$edit_blog_body
+             'blog_body'=>$edit_blog_body,
+             'blog_meta_tag'=>$edit_blog_meta
          ]);
          if($updateBlog){
              return response()->json([
@@ -166,6 +177,11 @@ class blogsController extends Controller
      //Delete Blog
      public function deleteBlog(Request $request){
              $delBlogId=$request->input('n_delBlogId');
+             $delete_blog_image=DB::table('table_blogs')->where('id','=',$delBlogId)->get();
+             foreach($delete_blog_image as $row){
+                $image_path1=$row->image_path1;
+             }
+             unlink($image_path1);
              $delete_blog=DB::table('table_blogs')->where('id','=',$delBlogId)->delete();
              if($delete_blog){
                  return response()->json([
@@ -177,4 +193,34 @@ class blogsController extends Controller
                 ]);
              }
      }
+     //Process Blogs
+     
+     public function blogShow(string $id,string $page,string $page_no){
+         $displayBlog=DB::table('table_blogs')->where('id','=',$id)->get();
+         foreach($displayBlog as $row){
+                 $entry_date=$row->entry_date;
+                 $title=$row->title;
+                 $category=$row->category;
+                 $author=$row->author;
+                 $others=$row->others;
+                 $image_path1=$row->image_path1;
+                 $blog_body=$row->blog_body;
+                 $blog_meta_tag=$row->blog_meta_tag;
+         }
+     
+         return view('blogread',         
+             ['page'=>$page,
+             'page_no'=>$page_no,
+             'entry_date'=>$entry_date,
+             'title'=>$title,
+             'category'=>$category,
+             'author'=>$author,
+             'others'=>$others,
+             'image_path1'=>$image_path1,
+             'blog_body'=>$blog_body,
+             'blog_meta_tag'=>$blog_meta_tag
+        ]);
+        
+     }
+     
 }

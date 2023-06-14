@@ -10,6 +10,7 @@ use App\Http\Controllers\adminDashboardController;
 use App\Http\Controllers\adminDashboardViewController;
 use App\Http\Controllers\processTaxiBookingController;
 use App\Http\Controllers\blogsController;
+use App\Http\Controllers\hpController;
 
 
 
@@ -26,16 +27,8 @@ use App\Http\Controllers\blogsController;
 |
 */
 //GET ROUTES
-Route::get('/adminLogin', function () {
-     return view('adminlogin');
-})->name('admLogin');
-
-Route::get('/', function () {
-     return view('hp');
-});
-Route::get('/home', function () {
-    return view('hp');
-});
+Route::get('/', [hpController::class,'showHomePage']);
+Route::get('/home', [hpController::class,'showHomePage']);
 Route::get('/aboutus', function () {
     return view('aboutus');
 });
@@ -45,6 +38,8 @@ Route::get('/services', function () {
 Route::get('/blogs', function () {
     return view('blogs');
 });
+
+
 Route::get('/contactus', function () {
     return view('contactus');
 });
@@ -52,18 +47,21 @@ Route::get('/dbtest',function(){
     return view('dbtest');
 });
 
-Route::get('/adminDashboard',function(){
-    return view('/admin/adminDashboard');
-})->name('admin_db');
-
+Route::get('/adminLogin',function(){
+     return view('/adminlogin');
+});
+Route::get('/adminDashboard',[adminDashboardController::class,'showAdminDashboard']);
 
 Route::get('/users',[userController::class,'displayUsers']);
 Route::get('/adminLogout',[adminLogoutController::class,'adminLogout']);
-Route::get('/adminDashboardPage',[adminDashboardViewController::class,'adminDashboardView']);
+Route::get('/adminDashboardPage',[adminDashboardViewController::class,'showTaxiBookings']);
 Route::get('/show_contactusMessages',[contactusController::class,'showContactusMessages']);
 Route::get('/taxiBooking',[taxiBookingController::class,'showRequestData']);
 Route::get('/process_taxiBooking/{id}',[taxiBookingController::class,'showTaxiBookingRequestStatus']);
 Route::get('/blogPosts',[blogsController::class,'blogPostPage']);
+Route::get('/blog_show/id/{id}/page/{page}/page_no/{page_no}',[blogsController::class,'blogShow']);
+
+
 
 
 
