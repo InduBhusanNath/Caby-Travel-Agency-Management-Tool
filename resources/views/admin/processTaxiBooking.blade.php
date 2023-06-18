@@ -120,14 +120,30 @@
       <div class="col-sm-4">
           <section id="client_details" class="background-ghostwhite padding10">
                 <button type="button" id="show_update_client_details" class="btn btn-primary">Update</button>
-                <h2>CLIENT DETAILS</h2>
-                <span class="font font22">NAME</span><br/>
-                <span class="font font18">{{$prospect_name}}</span><br/>
-                <span class="font font22">PHONE</span><br/>
-                <span class="font font18">{{$prospect_phone}}</span><br/>
-                <span class="font font22">EMAIL</span><br/>
-                <span class="font font18">{{$prospect_email}}</span><br/>       
-         
+                <table class="table font font18 text-left">
+                     <thead>
+                          <tr>
+                               <th scope="col">CLIENT</th>
+                               <th scope="col">&nbsp;</th>
+                          </tr>
+                     </thead>
+                     <tbody>
+                          <tr>
+                               <td>NAME</td>
+                          <td>{{$prospect_name}}</td>
+                          </tr>
+                          <tr>
+                               <td>PHONE</td>
+                               <td>{{$prospect_phone}}</td>
+                          </tr>
+                          <tr>
+                               <td>EMAIL</td>
+                               <td>{{$prospect_email}}</td>
+                          </tr>
+                     
+                     </tbody>
+            </table>              
+        
           </section>
       <section id="update_client_details" class="background-ghostwhite hidden">
           <button id="hide_client_details" class="hide_btn">&#10060;</button>
@@ -159,11 +175,26 @@
       <div class="col-sm-4">
            <section id="address_details" class="background-ghostwhite padding10">
                 <button type="button" id="show_update_address_details" class="btn btn-primary">Update</button>
-                     <h2>ADDRESS DETAILS</h2>
-                     <span class="font font22">PICK UP ADDRESS</span><br/>
-                     <span class="font font18">{{$pickup_address}}</span><br/>
-                     <span class="font font22">DROP ADDRESS</span><br/>
-                     <span class="font font18">{{$drop_address}}</span><br/>
+                <table class="table font font18 text-left">
+                     <thead>
+                          <tr>
+                               <th scope="col">ADDRESS</th>
+                               <th scope="col">&nbsp;</th>
+                          </tr>
+                     </thead>
+                     <tbody>
+                          <tr>
+                               <td>PICKUP ADDRESS</td>
+                               <td>{{$pickup_address}}</td>
+                          </tr>
+                          <tr>
+                               <td>DROP ADDRESS</td>
+                               <td>{{$drop_address}}</td>
+                          </tr>
+                                               
+                     </tbody>
+                </table>                
+                
            </section>
            <section id="update_address_details" class="background-ghostwhite padding10 hidden">
                 <button id="hide_update_address_details" class="hide_btn">&#10060;</button>
@@ -194,13 +225,31 @@
       <div class="col-sm-4">
            <section id="taxi_details" class="background-ghostwhite padding10">
            <button type="button" id="show_update_taxi_details" class="btn btn-primary">Update</button>
-                <h2>ASSIGN/UPDATE TAXI</h2>
-                <span class="font font22">TAXI NUMBER</span><br/>
-                <span class="font font18">{{$vehicle_number}}</span><br/>
-                <span class="font font22">TAXI TYPE</span><br/>
-                <span class="font font18">{{$vehicle_type}}</span><br/>
-                <span class="font font22">TAXI MODEL</span><br/>
-                <span class="font font18">{{$vehicle_model}}</span><br/>
+           <table class="table font font18 text-left">
+                     <thead>
+                          <tr>
+                               <th scope="col">TAXI</th>
+                               <th scope="col">&nbsp;</th>
+                          </tr>
+                     </thead>
+                     <tbody>
+                          <tr>
+                               <td>TAXI NUMBER</td>
+                               <td>{{$vehicle_number}}</td>
+                          </tr>
+                          <tr>
+                               <td>TAXI TYPE</td>
+                               <td>{{$vehicle_type}}</td>
+                          </tr>
+                          <tr>
+                               <td>TAXI MODEL</td>
+                               <td>{{$vehicle_model}}</td>
+                          </tr>
+                                               
+                     </tbody>
+          </table>
+           
+           
            </section>
            <section id="update_taxi_details" class="background-ghostwhite padding10 hidden">
                 <button id="hide_update_taxi_details" class="hide_btn">&#10060;</button>
@@ -232,13 +281,33 @@
       <div class="col-sm-4">
            <section id="driver_details" class="background-ghostwhite padding10">
                 <button type="button" id="show_update_driver_details" class="btn btn-primary">Update</button>
-                <h2>DRIVER DETAILS</h2>
-                <span class="font font22">DRIVER NAME</span><br/>
-                <span class="font font18">{{$driver_name}}</span><br/>
-                <span class="font font22">DRIVER PHONE</span><br/>
-                <span class="font font18">{{$driver_phone}}</span><br/>
-                <span class="font font22">DRIVER IDENDITY</span><br/>
-                <span class="font font18">{{$driver_idendity}}</span><br/>
+                
+                <table class="table font font18 text-left">
+                     <thead>
+                          <tr>
+                               <th scope="col">DRIVER</th>
+                               <th scope="col">&nbsp;</th>
+                          </tr>
+                     </thead>
+                     <tbody>
+                          <tr>
+                               <td>DRIVER NAME</td>
+                               <td>{{$driver_name}}</td>
+                          </tr>
+                          <tr>
+                               <td>DRIVER PHONE</td>
+                               <td>{{$driver_phone}}</td>
+                          </tr>
+                          <tr>
+                               <td>DRIVER IDENDITY</td>
+                               <td>{{$driver_idendity}}</td>
+                          </tr>
+                                               
+                     </tbody>
+                </table>
+                
+                
+                
            </section>
            <section id="update_driver_details" class="background-ghostwhite padding10 hidden">
                 <button id="hide_update_driver_details" class="hide_btn">&#10060;</button>
@@ -269,12 +338,28 @@
       <div class="col-sm-4">
           <section id="fare_details1" class="background-ghostwhite padding10">
           <button type="button" id="show_update_fare_details1" class="btn btn-primary">Update</button>
-                <h2>FARE DETAILS-1</h2>
-                <span class="font font22">FARE</span><br/>
-                <span class="font font18">{{$fare}}</span><br/>
-                <span class="font font22">ADVANCE FARE</span><br/>
-                <span class="font font18">{{$advance_fare}}</span><br/>
-                
+                <table class="table font font18 text-left">
+                     <thead>
+                          <tr>
+                               <th scope="col">FARE-1</th>
+                               <th scope="col">&nbsp;</th>
+                          </tr>
+                     </thead>
+                     <tbody>
+                          <tr>
+                               <td>FARE</td>
+                               <td>{{$fare}}</td>
+                          </tr>
+                          <tr>
+                               <td>ADVANCE FARE</td>
+                               <td>{{$advance_fare}}</td>
+                          </tr>
+                                                                         
+                     </tbody>
+                </table>
+          
+          
+                         
            </section>
            <section id="update_fare_details1" class="background-ghostwhite padding10 hidden">
                 <button id="hide_update_fare_details1" class="hide_btn">&#10060;</button>
@@ -304,13 +389,30 @@
       <div class="col-sm-4">
           <section id="fare_details2" class="background-ghostwhite padding10">
                 <button type="button" id="show_update_fare_details2" class="btn btn-primary">Update</button>
-                <h2>FARE-2 DETAILS</h2>
-                <span class="font font22">PENDING FARE</span><br/>
-                <span class="font font18">{{$pending_fare}}</span><br/>
-                <span class="font font22">FINAL FARE PAYMENT</span><br/>
-                <span class="font font18">{{$final_fare_payment}}</span><br/>
-                <span class="font font22">FARE STATUS</span><br/>
-                <span class="font font18">{{$fare_status}}</span><br/>
+                <table class="table font font18 text-left">
+                     <thead>
+                          <tr>
+                               <th scope="col">FARE-2</th>
+                               <th scope="col">&nbsp;</th>
+                          </tr>
+                     </thead>
+                     <tbody>
+                          <tr>
+                               <td>PENDING FARE</td>
+                               <td>{{$pending_fare}}</td>
+                          </tr>
+                          <tr>
+                               <td>FINAL FARE PAYMENT</td>
+                               <td>{{$final_fare_payment}}</td>
+                          </tr>
+                          <tr>
+                               <td>FARE STATUS</td>
+                               <td>{{$fare_status}}</td>
+                          </tr>
+                                                                         
+                     </tbody>
+                </table>               
+                
            </section>
            <section id="update_fare_details2" class="background-ghostwhite padding10 hidden">
                 <button id="hide_update_fare_details2" class="hide_btn">&#10060;</button>
@@ -341,11 +443,26 @@
       <div class="col-sm-4">
            <section id="booking_status" class="background-ghostwhite padding10">
            <button type="button" id="show_update_booking_status" class="btn btn-primary">Update</button>
-                <h2>BOOKING STATUS</h2>
-                <span class="font font22">BOOKING STATUS</span><br/>
-                <span class="font font18">{{$booking_status}}</span><br/>  
-                <span class="font font22">CANCELLATION REASONS(if any)</span><br/>
-                <span class="font font18">{{$booking_status_reasons}}</span><br/>                
+                <table class="table font font18 text-left">
+                     <thead>
+                          <tr>
+                               <th scope="col">BOOKING</th>
+                               <th scope="col">&nbsp;</th>
+                          </tr>
+                     </thead>
+                     <tbody>
+                          <tr>
+                               <td>BOOKING STATUS</td>
+                               <td>{{$booking_status}}</td>
+                          </tr>
+                          <tr>
+                               <td>CANCELLATION REASONS(if any)</td>
+                               <td>{{$booking_status_reasons}}</td>
+                          </tr>
+                                                                                                   
+                     </tbody>
+                </table>   
+                          
            </section>
            <section id="update_booking_status" class="background-ghostwhite padding10 hidden">
                 <button id="hide_booking_status" class="hide_btn">&#10060;</button>
@@ -378,11 +495,26 @@
       <div class="col-sm-4">
            <section id="trip_status" class="background-ghostwhite padding10">
            <button type="button" id="show_update_trip_status" class="btn btn-primary">Update</button>
-                <h2>TRIP STATUS</h2>
-                <span class="font font22">TRIP STATUS</span><br/>
-                <span class="font font18">{{$trip_status}}</span><br/>
-                <span class="font font22">REASONS(if any)</span><br/>
-                <span class="font font18">{{$trip_status_reasons}}</span><br/>
+           <table class="table font font18 text-left">
+                     <thead>
+                          <tr>
+                               <th scope="col">TRIP</th>
+                               <th scope="col">&nbsp;</th>
+                          </tr>
+                     </thead>
+                     <tbody>
+                          <tr>
+                               <td>TRIP STATUS</td>
+                               <td>{{$trip_status}}</td>
+                          </tr>
+                          <tr>
+                               <td>REASONS(if any)</td>
+                               <td>{{$trip_status_reasons}}</td>
+                          </tr>
+                                                                                                   
+                     </tbody>
+                </table>
+           
            </section>
            <section id="update_trip_status" class="background-ghostwhite padding10 hidden">
                 <button id="hide_trip_status" class="hide_btn">&#10060;</button>

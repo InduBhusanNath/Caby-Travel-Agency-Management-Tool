@@ -40,9 +40,18 @@
 .background-skyblue{
        background-color: skyblue;
 }
+.background-lavender{
+      background-color:lavender;
+}
 
 .color-gold{
-      color:gold;
+       color:gold;
+}
+.color-darkorange{
+       color:darkorange;
+}
+.color-black{
+       color:black;
 }
 
 .padding0{
@@ -131,18 +140,11 @@
 }
 .sidepanel{
       border-radius:12px 12px 12px 12px;
-      background-color: ghostwhite;
+      background-color: whitesmoke;
       padding:10px;
       width:100%;
 }
-.collapse_text1{
-       display:block;
-       cursor:pointer;
-       
-}
-.collapse_text2{
-      display:none;
-}
+
 .action{
        text-decoration:none;
        cursor:pointer;
@@ -163,4 +165,33 @@
 .collapse_text2{
        background-color: lightyellow;
        padding:10px;
+}
+.collapsible{
+       background-color: transparent;
+       cursor: pointer;
+       padding:10px;
+       width:100%;
+       border:none;
+       text-align: left;
+}
+.active,.collapsible:hover{
+       background-color: transparent;
+}
+.collapsible:after{
+       content:'\002B';
+       color:black;
+       font-weight: bold;
+       float:right;
+
+}
+.active:after{
+       content: "\2212";
+}
+.collapsible_content{
+       padding: 15px;
+       display:none;
+       border:1px solid black;
+       transition: max-height 0.2s ease-out;
+       background-color: transparent;
+
 }

@@ -2,10 +2,19 @@
 <html lang="en">
 <html>
      <head>
-         <title>Aeiety Trips:Affordable Taxi|Cab Services in Guwahati.....</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-00GJQDC7QF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-00GJQDC7QF');
+</script>
+         <title>Best Taxi Service in Guwahati|Cab Service in Guwahati.....</title>
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <link rel="icon" href="../public/images/icons/caricon.png" type="image/gif" sizes="16x16">
-         <meta name="description" content="Know Us"/>
+         <meta name="description" content="We offer the best taxi service in Guwahati for local and outstation trips. Our cab service in Guwahati is distinguished by the most affordable fares. "/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/app.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/font.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/form.css')}}"/>
@@ -30,7 +39,7 @@
      <div class="col-sm-1">&nbsp;</div>
      <div class="col-sm-10">
          <p>&nbsp;</p>
-         <section class="padding10 bg-info" style="border-radius:12px 12px 12px 12px;">
+         <section class="padding10 background-powderblue" style="border-radius:12px 12px 12px 12px;">
              
              <h2>Are You Looking For A Taxi?</h2>
              
@@ -78,17 +87,25 @@
                      <!--Second Row-->
                      <div class="row">
                           <!--Prospect Name-->
-                          <div class="col-sm-3">
+                          <div class="col-sm-2">
                                <div class="form-group">
                                     <label for="prospectName">Name</label>
                                     <input type="text" class="form-control" id="prospectName" name="n_prospectName"/>       
                                </div>
                           </div>
                           <!--Contact No-->
-                          <div class="col-sm-3">
+                          <div class="col-sm-2">
                                <div class="form-group">
                                     <label for="prospectPhone">Phone</label>
                                     <input type="text" class="form-control" id="prospectPhone" name="n_prospectPhone"/>
+                               </div>
+                          </div>
+                          
+                          <!--Email-->
+                          <div class="col-sm-2">
+                               <div class="form-group">
+                                    <label for="prospectEmail">Email</label>
+                                    <input type="email" class="form-control" id="prospectEmail" name="n_prospectEmail"/>
                                </div>
                           </div>
                           <!--Pick Up Address-->
@@ -148,22 +165,22 @@
            </section>
           
       </div>
-      <div class="col-sm-4 bg-warning">
-          <section class="bg-warning padding10 font font18" style="border-radius:12px 12px 12px 12px;">
-                <span class="font font24">FAQs</span>
-                <div class="collapse_text1">How to Book a Taxi at Aeiety Trips? <span style="float:right;">&plus;</span></div>
-                <div class="collapse_text2">You can either submit the request form,call us, or even drop an email.</div>
-                <div class="collapse_text1">What to Do if I Need to Cancel My Booking?<span style="float:right;">&plus;</span></div>
-                <div class="collapse_text2">You can call us to cancel your taxi booking.</div>
-                <div class="collapse_text1">Is There Any Charges for Cancelling Booking?<span style="float:right;">&plus;</span></div>
-                <div class="collapse_text2">You need not pay any charges of you cancel your booking up to one day prior to the journey date. If you do so on the scheduled trip date,you need to pay 50% of the fare.</div>
-                <div class="collapse_text1">What Types of Cars Do You Provide?<span style="float:right;">&plus;</span></div>
-                <div class="collapse_text2">We provide small, medium and luxury cars. And, the fares varies accordingly.</div>
+      <div class="col-sm-4 background-palegoldenrod">
+          <section class="padding10 font font18" style="border-radius:12px 12px 12px 12px;">
+                <span class="font font24"><i class="fa-solid fa-question"></i>&nbsp;FAQs</span>
+                <div class="collapsible">How to Book a Taxi at Aeiety Trips?</div>
+                <div class="collapsible_content">You can either submit the request form,call us, or even drop an email.</div>
+                <div class="collapsible">What to Do if I Need to Cancel My Booking?</div>
+                <div class="collapsible_content">You can call us to cancel your taxi booking.</div>
+                <div class="collapsible">Is There Any Charges for Cancelling Booking?</div>
+                <div class="collapsible_content">You need not pay any charges of you cancel your booking up to one day prior to the journey date. If you do so on the scheduled trip date,you need to pay 50% of the fare.</div>
+                <div class="collapsible">What Types of Cars Do You Provide?</div>
+                <div class="collapsible_content">We provide small, medium and luxury cars. And, the fares varies accordingly.</div>
           </section>
            <br/>
            <section class="bg-warning padding10 font font18" style="border-radius:12px 12px 12px 12px;">
-            <h3>Need Help?</h3>
-            <span class="font font18 lead">We are ready to assist you in every step of your taxi booking journey.<br/> Call/Whatapp us at 8888</span>
+            <span class="font font24"><i class="fa-solid fa-handshake-angle"></i>&nbsp;Need Help?</span><br/>
+            <span class="font font18 lead">We are ready to assist you in every step of your taxi booking journey.<br/> Call/Whatapp us at 9531393648</span>
            </section>
 
       </div>
@@ -179,19 +196,21 @@
       </div>
       <div class="col-sm-2"></div>
 </div>
-<div class="row background-powderblue">
+<div class="row padding15 background-powderblue">
       <div class="col-sm-3">
-           <div class="card border-0 bg-transparent">
-                <div class="card-body">                     
+           <div class="card border-white bg-transparent rounded" >
+                <div class="card-body background-aliceblue">                     
                      <span class="font font18 lead text-center">
                           Regardless of where you want to go, we have the coresponding taxi service for you.
-                          <br/>Want to Know More? <br/>Call at 8978789
+                          <br/><b>Want to Know What We Have For You?</b>
+                               <br/>
+                               <span class="font font18 padding5" style="background-color:orange;border-radius:12px 12px 12px 12px;"><a href="contactus" class="color-black action"><b><i class="fa-regular fa-hand-point-right"></i>&nbsp;Reach Out To Us</b></a></span>
                           <p>&nbsp;</p>
                      </span>
                 </div>
            </div>              
       </div>
-      <div class="col-sm-3 background-mintcream">
+      <div class="col-sm-3">
            <div class="card border-0 bg-transparent">
                 <div class="card-body">
                      <h2><i class="fa-solid fa-map"></i></h2>
@@ -205,7 +224,7 @@
            </div>
            
       </div>
-      <div class="col-sm-3 background-mintcream">      
+      <div class="col-sm-3">      
            <div class="card border-0 bg-transparent">
                 <div class="card-body">
                      <h2><i class="fa-solid fa-location-crosshairs"></i></h2>
@@ -217,7 +236,7 @@
                 </div>
            </div>
       </div>
-      <div class="col-sm-3 background-mintcream">
+      <div class="col-sm-3">
            <div class="card bg-transparent border-0">
                 <div class="card-body">
                 <h2><i class="fa-solid fa-umbrella-beach"></i></h2>

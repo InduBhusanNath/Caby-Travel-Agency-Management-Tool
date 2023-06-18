@@ -15,12 +15,15 @@
      </head>
      <body><div class="container-fuid">
 <div class="row">
-     <div class="col-sm-4"><h4>Taxi Bookings</h4></div>
-     <div class="col-sm-4"></div>
-     <div class="col-sm-4"></div>
+     <div class="col-sm-12">
+         <br/>
+         <h3>TAXI BOOKINGS</h3>
+         <br/>
+     </div>    
 </div>
 <div class="row">
      <div class="col-sm-2">
+         
          <div class="card">
              
              <div class="card-body text-center">
@@ -68,9 +71,12 @@
 
 </div>
 <div class="row">
-     <div class="col-sm-4"><h4>Others</h4></div>
-     <div class="col-sm-4"></div>
-     <div class="col-sm-4"></div>
+     <div class="col-sm-12">
+         <br/>
+         <h3>OTHERS</h3>
+         <br/>
+     </div>
+     
 </div>
 <div class="row">
      <div class="col-sm-2">
@@ -98,10 +104,10 @@
      <div class="col-sm-2">
          <div class="card">             
              <div class="card-body text-center">
-                 <span class="font font24">{{$contactus_messages}}</span>
+                 <span class="font font24">{{$admin_users}}</span>
              </div>
              <div class="card-footer">
-                <a href="show_contactusMessages" class="action font font14">Contact Messages<br/>&#129034;</a>
+                <a href="users" class="action font font14">Admin Users<br/>&#129034;</a>
              </div>
          </div>
      </div>

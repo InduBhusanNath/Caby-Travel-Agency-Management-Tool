@@ -10,11 +10,14 @@ use Illuminate\View\View;
 class taxiBookingController extends Controller
 {   
     public function showRequestData(){
+        if(!session('adminuser')){
+            return redirect()->route('adminlogin');
+        }
         $taxi_requests=DB::table('table_taxi_bookings')->get();
          
                 
 
-         return view('/admin/taxiBooking',['taxi_requests'=>$taxi_requests]);
+         return view('/admin/taxibooking',['taxi_requests'=>$taxi_requests]);
 
     }
 
@@ -26,7 +29,7 @@ class taxiBookingController extends Controller
          $pickuptime=$request->input('n_pickuptime');
          $prospectName=$request->input('n_prospectName');
          $prospectPhone=$request->input('n_prospectPhone');
-         $prospect_email='';
+         $prospect_email=$request->input('n_prospectEmail');
          $prospectfrom=$request->input('n_prospectfrom');
          $prospectto=$request->input('n_prospectto');
          $vehicle_number=''; 
@@ -221,6 +224,9 @@ class taxiBookingController extends Controller
      }
      //Display Request Status
      public function showTaxiBookingRequestStatus(string $id){
+        if(!session('adminuser')){
+            return redirect()->route('adminlogin');
+        }
          //ID
          $booking_id=$id;
          $taxirequests=DB::table('table_taxi_bookings')->where('id','=',$booking_id)->get();

@@ -36,7 +36,7 @@
 
 <div class="row">
      <!--Admin Side Panel-->
-     <div class="col-sm-3 padding10">
+     <div class="col-sm-3 background-whitesmoke padding10">
          <section class="text-center">
             <img src="../public/images/logo/logo.png" class="img-fluid w-80">
          </section>
@@ -57,6 +57,24 @@
                      
                  </tbody>
              </table>
+
+        </section>
+         <section class="padding10 font font24">
+             <span class="collapsible">TASKS</span>
+             <span class="collapsible_content">
+                 <table class="table">
+                     <tbody>
+                         <tr>
+                             <td><i class="fa-solid fa-user-plus"></i>&nbsp;<a href="users" class="action">Admin Users</a></td>
+                         </tr>
+                         <tr>
+                             <td><i class="fa-solid fa-blog"></i>&nbsp;<a href="blogPosts" class="action">Blogs</a></td>
+                         </tr>
+                     </tbody>
+                 </table>
+
+             </span>
+         </section>
              
              
          

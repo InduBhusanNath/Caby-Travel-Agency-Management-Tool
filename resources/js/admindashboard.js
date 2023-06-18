@@ -47,7 +47,23 @@ function loadPage(url){
      
 }
 
+//Tasks Collapsible
+var coll=document.getElementsByClassName("collapsible");
+var active=document.getElementsByClassName("active");
+var c;
+for(c=0;c<coll.length;c++){
+    coll[c].addEventListener('click',function(){
+         
+         var coll_content=this.nextElementSibling;
+         if(coll_content.style.display==='none'){
+             coll_content.style.display='block'; 
+         }else{
+             coll_content.style.display='none'; 
+         }
+         this.classList.toggle("active");
 
+    });
+}
 
 
 

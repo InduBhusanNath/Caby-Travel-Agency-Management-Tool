@@ -49,7 +49,7 @@ Route::get('/dbtest',function(){
 
 Route::get('/adminLogin',function(){
      return view('/adminlogin');
-});
+})->name('adminlogin');
 Route::get('/adminDashboard',[adminDashboardController::class,'showAdminDashboard']);
 
 Route::get('/users',[userController::class,'displayUsers']);
@@ -78,7 +78,7 @@ Route::post('/edit_user_details',[userController::class,'edit_userDetails']);
 Route::post('/send_did',[userController::class,'set_delData']);
 Route::post('/delete_user',[userController::class,'delete_userData']);
 Route::post('/admin_rights',[loginController::class,'grant_adminRights']);
-//Route::post('/adminDashboard',[adminDashboardController::class,'showAdminDashboardPage']);
+
 Route::post('/user_delete_data',[contactusController::class,'userDeleteData']);    
 Route::post('/delete_contactus_message',[contactusController::class,'deleteContactUsMessage']);
 Route::post('/set_taxibooking_edit_data',[taxiBookingController::class,'setTaxiBookingEditData']);

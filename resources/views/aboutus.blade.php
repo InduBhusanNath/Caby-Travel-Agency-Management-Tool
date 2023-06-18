@@ -2,10 +2,19 @@
 <html lang="en">
 <html>
      <head>
-         <title>About AeietyTrips|Affordable|Friendly|Taxi|Cab|Guwahati</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-00GJQDC7QF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-00GJQDC7QF');
+</script>
+         <title>Taxi Operators in Guwahati|Cab Rental in Guwahati</title>
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <link rel="icon" href="../public/images/icons/caricon.png" type="image/gif" sizes="16x16">
-         <meta name="description" content="AeietyTrips is an excellent rental cab service provider, dedicated to serve customers with the best taxi services at affordable fares."/>
+         <meta name="description" content="One of the best taxi operators in Guwahati, offering affordable cab rental in Guwahati."/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/app.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/font.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/form.css')}}"/>

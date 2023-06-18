@@ -1,4 +1,6 @@
+var prospect_request_form=document.getElementById("prospect_request_form");
 var res=document.getElementById("res");
+
 var oneway=document.getElementById("oneway");
 var roundtrip=document.getElementById("roundtrip");
 var pickupdate=document.getElementById("pickupdate");
@@ -6,10 +8,12 @@ var returndate=document.getElementById("returndate");
 var pickuptime=document.getElementById("pickuptime");
 var prospectName=document.getElementById("prospectName");
 var prospectPhone=document.getElementById("prospectPhone");
+var prospectEmail=document.getElementById("prospectEmail");
 var prospectfrom=document.getElementById("prospectfrom");
 var prospectto=document.getElementById("prospectto");
 var token=document.getElementById("token").value;
 var returnDate;
+
 
 //Disabling Roundtrip Radio
 oneway.onclick=function(){
@@ -72,6 +76,7 @@ function enquiryFormSubmit(e){
        fd1.append('n_pickuptime',pickuptime.value);
        fd1.append('n_prospectName',prospectName.value);
        fd1.append('n_prospectPhone',prospectPhone.value);
+       fd1.append('n_prospectEmail',prospectEmail.value);
        fd1.append('n_prospectfrom',prospectfrom.value);
        fd1.append('n_prospectto',prospectto.value);
        fd1.append('token',token);
@@ -91,6 +96,7 @@ function enquiryFormSubmit(e){
              }else if(flag=='0'){
                    res.innerHTML="Failed To Submit Request,Try Again";
              }
+             prospect_request_form.reset();
              
        }
 
@@ -103,22 +109,22 @@ function enquiryFormSubmit(e){
 
 
 //Submit Enquiry-Form
-document.getElementById("prospect_request_form").addEventListener("submit",enquiryFormSubmit);
+prospect_request_form.addEventListener("submit",enquiryFormSubmit);
 
 //FAQs
-var collapse_text1=document.getElementsByClassName("collapse_text1");
-var collapse_text2=document.getElementsByClassName("collapse_text2");
+var collapsible=document.getElementsByClassName("collapsible");
+var collapsible_content=document.getElementsByClassName("collapsible_content");
 var c;
-for(c=0;c<collapse_text1.length;c++){
-      collapse_text1[c].addEventListener('click',function(){
-             this.classList.toggle("active");
-             var text=this.nextElementSibling;
-             if(text.style.display=='none'){
-                   text.style.display='block';
+for(c=0;c<collapsible.length;c++){
+       collapsible[c].addEventListener('click',function(){
+             //this.classList.toggle('active');
+             var collapsible_content=this.nextElementSibling;
+             if(collapsible_content.style.display=='none'){
+                   collapsible_content.style.display='block';
+                   
              }else{
-                   text.style.display='none';
+                   collapsible_content.style.display='none';
+                   
              }
-
-      });
-      
+       });
 }

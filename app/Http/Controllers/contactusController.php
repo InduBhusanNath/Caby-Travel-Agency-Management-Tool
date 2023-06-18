@@ -10,6 +10,9 @@ class contactusController extends Controller
 {    
     //Show Contact Us Messages
      public function showContactusMessages(){
+        if(!session('adminuser')){
+            return redirect()->route('adminlogin');
+        }
          $contactusmessages=DB::table('table_contactus')->get();
          $contactusmessages=DB::table('table_contactus')->simplePaginate(20);
 

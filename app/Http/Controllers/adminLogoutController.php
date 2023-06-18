@@ -9,6 +9,6 @@ class adminLogoutController extends Controller
 {
     public function adminLogout(Request $request){
          $request->session()->forget('adminuser');
-         return redirect()->route('admLogin');
+         return redirect()->route('adminlogin');
     }
 }

@@ -11,6 +11,9 @@ class blogsController extends Controller
 {
     //Show Blog Post Page
     public function blogPostPage(Request $request){
+        if(!session('adminuser')){
+            return redirect()->route('adminlogin');
+        }
          $showBlogs=DB::table('table_blogs')->get();
          $showBlogs=DB::table('table_blogs')->paginate(3);
          return view('/admin/blogPosts',['showBlogs'=>$showBlogs]);

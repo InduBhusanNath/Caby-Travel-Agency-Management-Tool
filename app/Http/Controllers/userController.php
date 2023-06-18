@@ -11,6 +11,9 @@ class userController extends Controller
 {    
     //Display Users
      public function displayUsers(){
+        if(!session('adminuser')){
+            return redirect()->route('adminlogin');
+        }
          $users=userModel::orderByDesc('entry_date')->get();
          $users=userModel::paginate(20);
          return view('/admin/users',['users'=>$users]);

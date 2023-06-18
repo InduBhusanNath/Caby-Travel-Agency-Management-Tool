@@ -2,10 +2,19 @@
 <html lang="en">
 <html>
      <head>
-         <title>Aeiety Trips:Contact Us|Affordable Taxi Services</title>
+          <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-00GJQDC7QF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-00GJQDC7QF');
+</script>
+         <title>Guwahati Taxi Service|Best Cab Service in Guwahati</title>
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <link rel="icon" href="../public/images/icons/caricon.png" type="image/gif" sizes="16x16">
-         <meta name="description" content="Contact Aeiety Trips to discuss your taxi requirements. We strive to provide excellent taxi rental services at the most affordable fares, and best experiences."/>
+         <meta name="description" content="Contact for the best cab service in Guwahati, trusted Guwahati taxi service."/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/app.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/font.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/form.css')}}"/>
@@ -51,7 +60,7 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
            <h3>
-               Are you looking for a dependable taxi rental service provider to book a cab? Submit the form or connect with us with the contact details. We will be at your service quickly.
+               Are you looking for a dependable taxi rental service provider to book a cab? Submit the form or connect with us through the contact details. We will be at your service quickly.
            </h3>
            
       </div>
@@ -106,19 +115,19 @@
                 
                 <p>
                      <span class="font font22">
-                          <i class="fa-solid fa-phone"></i>&nbsp;9395124889
+                          <i class="fa-solid fa-phone"></i>&nbsp;9531393648
                      </span>
                 
                 </p>
                 <p>
                      <span class="font font22">
-                          <i class="fa-brands fa-whatsapp"></i></i>&nbsp;9395124889
+                          <i class="fa-brands fa-whatsapp"></i></i>&nbsp;9531393648
                      </span>   
                 
                 </p>
                 <p>
                      <span class="font font22">
-                          <i class="fa-regular fa-envelope"></i>&nbsp;info@aeiety.com
+                          <i class="fa-regular fa-envelope"></i>&nbsp;info.aeiety@gmail.com
                      </span> 
                </p> 
            </section>

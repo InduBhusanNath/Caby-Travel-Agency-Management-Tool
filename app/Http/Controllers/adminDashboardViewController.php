@@ -11,6 +11,9 @@ class adminDashboardViewController extends Controller
 {
      //Booking Status
      public function showTaxiBookings(){
+           if(!session('adminuser')){
+               return redirect()->route('adminlogin');
+           }
            $new_requests=DB::table('table_taxi_bookings')->where('trip_status','=','Unprocessed')->count();
            $confirmed_bookings=DB::table('table_taxi_bookings')->where('booking_status','=','Confirmed')->count();
            $ongoing=DB::table('table_taxi_bookings')->where('trip_status','=','Ongoing')->count();
@@ -21,7 +24,7 @@ class adminDashboardViewController extends Controller
       //Contact Us
            $contactus_messages=DB::table('table_contactus')->count();
       //Users
-           $contactus_messages=DB::table('table_contactus')->count();
+           $admin_users=DB::table('table_users')->where('admin_status','=','Admin')->count();
            
 
 
@@ -31,7 +34,8 @@ class adminDashboardViewController extends Controller
                 'ongoing'=>$ongoing,
                 'unpaid_fare'=>$unpaid_fare,
                 'blogs_count'=>$blogs_count,
-                'contactus_messages'=>$contactus_messages
+                'contactus_messages'=>$contactus_messages,
+                'admin_users'=>$admin_users
          ]
         );
 

@@ -45,18 +45,16 @@
                   <i class="fa-solid fa-location-dot"></i>&nbsp;14A,Nirupama Enclave,<br/>Beltola,Guwahati,<br/>Assam:781029, India
              </span>
              <br/>
-             <span class="font font-16 lead"><i class="fa-solid fa-phone"></i>&nbsp;9395124889</span><br/>
+             <span class="font font-16 lead"><i class="fa-solid fa-phone"></i>&nbsp;9531393648</span><br/>
              
-             <span class="font font-16 lead"><i class="fa-brands fa-whatsapp"></i>&nbsp;9395124889</span>
+             <span class="font font-16 lead"><i class="fa-brands fa-whatsapp"></i>&nbsp;9531393648</span>
              <br/>
-             <span class="font font-16 lead"><i class="fa-regular fa-envelope"></i>&nbsp;info@aeiety.com</span><br/>
+             <span class="font font-16 lead"><i class="fa-regular fa-envelope"></i>&nbsp;info.aeiety@gmail.com</span><br/>
              
          </section>
          <span id="whatsapp" class="font font-16 lead ">
-             Directly&nbsp;<a  href="https://wa.me/918638576314?text=Most%20Affordable%20Taxi%20Rental%20Services%20With%Best%20Quality" class="text-decoration-none"><img src="../public/images/icons/whatsapp.png" class="img-fluid" alt="Whatsapp"></a>
-                                  
-
-             </span>
+             <a  href="https://wa.me/919531393648?text=Hey%20Please%20help%20me%20to%20book%20a%20Taxi%20....." class="text-decoration-none"><img src="../public/images/icons/whatsapp.png" class="img-fluid" alt="Whatsapp"></a>
+         </span>
      </div>   
 
 </div>
