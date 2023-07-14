@@ -205,6 +205,27 @@
          </form>
 
      </section>
+     <!--Change Password-->
+     <section>
+         <h3>Change Password</h3>
+         <span id="res3a" class="res"></span>
+         <form id="edit_userPassword">
+         <div class="form-group">
+                 <input type="hidden" id="token2a" value="<?php echo csrf_token();?>">
+         </div>
+         <div class="form-group">
+                 <input type="hidden" id="editPassword_id" name="n_editPassword_id">
+         </div>
+             <div class="form-group">
+                 <label for="user_new_password">New Password</label>
+                 <input type="password" class="form-control" id="user_new_password" name="n_user_new_password"/>                        
+             </div>
+             <div class="form-group">
+                 <button type="submit" class="submit">CHANGE PASSWORD</button>
+             </div> 
+
+         </form>
+     </section>
 </div>
 <!--User Delete Form-->
 <div id="delete_form" class="popup">

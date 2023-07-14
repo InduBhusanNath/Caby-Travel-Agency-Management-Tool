@@ -12,6 +12,7 @@
          <link rel="stylesheet" href="{{URL::asset('../resources/bootstrap/css/bootstrap.min.css')}}"/>
          <script src="../resources/bootstrap/js/bootstrap.min.js"></script>
          <script src="{{URL::asset('../resources/ckeditor5/ckeditor.js')}}"></script>
+         <script src="{{URL::asset('../resources/tinymce/js/tinymce/tinymce.min.js')}}"></script>
          
          
          
@@ -201,14 +202,18 @@
              <div class="form-group">
                  <button type="submit" class="submit">EDIT BLOG</button>                 
              </div>
-             <script>
-                   
+             <script>                  
+                 
+      });
+                 
+                  
                    ClassicEditor
-                         .create(document.querySelector('#edit_blog_body').updateElement())                         
+                         .create(document.querySelector('#edit_blog_body'))                            
+                                                    
                          .catch(error => {
                                  console.error( error );
                             } );
-                           
+                    
              </script>
 
          </form>

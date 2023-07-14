@@ -14,6 +14,7 @@ class userController extends Controller
         if(!session('adminuser')){
             return redirect()->route('adminlogin');
         }
+       
          $users=userModel::orderByDesc('entry_date')->get();
          $users=userModel::paginate(20);
          return view('/admin/users',['users'=>$users]);
@@ -43,8 +44,8 @@ class userController extends Controller
          $user->username=$username;
          $user->phone=$request->input('n_phone');
          $user->password=md5($request->input('n_password'));
-         $user->designation=$request->input('n_admin_status');
-         $user->address=$request->input('n_designation');
+         $user->address=$request->input('n_address');
+         $user->designation=$request->input('n_designation');
          $user->admin_status=$request->input('n_admin_status');
 
         $user->save();
@@ -137,6 +138,22 @@ class userController extends Controller
                       'flag'=>'Failed to Update User Details, Try Again.....'
                  ]);
              }            
+
+     }
+     //Edit Password
+     public function changePassword(Request $request){
+         $userid=$request->input('n_editPassword_id');
+         $newpwd=md5($request->input('n_user_new_password'));
+         $chgpwd=DB::table('table_users')->where('id','=',$userid)->update(['password'=>$newpwd]);
+         if($chgpwd){
+             return response()->json([
+                'flag'=>'1'
+             ]);
+         }else{
+             return response()->json([
+                'flag'=>'0'
+             ]);
+         }
 
      }
      //Send Username

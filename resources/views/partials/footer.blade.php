@@ -60,7 +60,7 @@
 </div>
 <div class="row background-lightgoldenrodyellow">
      <div class="col-sm-12 text-center">
-         <span class="font font14">&copy;AeietyTrips&#124;All Rights Reserved &#124;Terms&amp;Conditions &#124;Privacy Policy</span>
+         <span class="font font14">&copy;AeietyTrips&#124;All Rights Reserved &#124;Terms&amp;Conditions &#124;Privacy Policy&#124;</span>
      </div>
 
 </div>

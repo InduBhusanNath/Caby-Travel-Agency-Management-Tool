@@ -27,6 +27,7 @@ use App\Http\Controllers\hpController;
 |
 */
 //GET ROUTES
+
 Route::get('/', [hpController::class,'showHomePage']);
 Route::get('/home', [hpController::class,'showHomePage']);
 Route::get('/aboutus', function () {
@@ -50,6 +51,7 @@ Route::get('/dbtest',function(){
 Route::get('/adminLogin',function(){
      return view('/adminlogin');
 })->name('adminlogin');
+Route::get('/forgot_password',[loginController::class,'forgotPassword']);
 Route::get('/adminDashboard',[adminDashboardController::class,'showAdminDashboard']);
 
 Route::get('/users',[userController::class,'displayUsers']);
@@ -75,9 +77,13 @@ Route::post('/send_pid',[userController::class,'send_user_priviledge_data']);
 Route::post('/set_user_priviledge',[userController::class,'set_userPriviledge']);
 Route::post('/send_eid',[userController::class,'set_editData']);
 Route::post('/edit_user_details',[userController::class,'edit_userDetails']);
+Route::post('/change_password',[userController::class,'changePassword']);
+
 Route::post('/send_did',[userController::class,'set_delData']);
 Route::post('/delete_user',[userController::class,'delete_userData']);
+Route::post('/change_admin_password',[adminDashboardController::class,'change_adminPassword']);
 Route::post('/admin_rights',[loginController::class,'grant_adminRights']);
+
 
 Route::post('/user_delete_data',[contactusController::class,'userDeleteData']);    
 Route::post('/delete_contactus_message',[contactusController::class,'deleteContactUsMessage']);

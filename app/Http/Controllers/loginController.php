@@ -35,6 +35,10 @@ class loginController extends Controller
             
          }
      }
+     //Forgot Password
+     public function forgotPassword(){
+           return view('forgot_password');
+     }
 }
 
 ?>

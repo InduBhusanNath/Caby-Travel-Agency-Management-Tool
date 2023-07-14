@@ -14,6 +14,10 @@
 
      </head>
      <body class="bg-light"><div class="container-fuid">
+        <!--CSRF-->
+        <form>
+            <input type="hidden" id="csrf_token" value="<?php echo csrf_token(); ?>"/>
+        </form>
 <!--Upper Section-->
 
 <div class="row">
@@ -86,11 +90,58 @@
          <section id="content_space"></section>        
      </div>
 </div>
-<!--Left Popuo-->
+<!--Left Popup-->
 <div id="adminProfile" class="left_popup">
      <section>
         <button id="hideButton" class="hide_btn">&#10060;</button>
+             <h4>USER PROFILE</h4>
+             <table class="table font font20">
+                 <tbody>
+                     <tr>
+                         <td>NAME</td>
+                         <td>{{$name}}</td>
+                     </tr>
+                     <tr>
+                         <td>PHONE</td>
+                         <td>{{$phone}}</td>
+                     </tr>
+                     <tr>
+                        <td>DESIGNATION</td>
+                        <td>{{$designation}}</td>
+                     </tr>
+                     <tr>
+                         <td>ADDRESS</td>
+                         <td>{{$address}}</td>
+                     </tr>
+                 </tbody>
+             </table>
 
+     </section>
+     <section>
+        <h4>CHANGE PASSWORD</h4>
+        <section id="change_admin_password" class="padding10">
+                
+                <span id="res1" class="res"></span>
+
+                <form id="change_admin_password_form">
+                     <div class="form-group">
+                          <input type="hidden" class="form-control" id="admin_id" name="n_admin_id" value="{{$id}}"/>                           
+                     </div>   
+                     
+                     <div class="form-group">
+                          <label for="admin_old_password">Old Password</label>
+                          <input type="password" class="form-control" id="admin_old_password" name="n_admin_old_password"/>                           
+                     </div>
+                     <div class="form-group">
+                          <label for="admin_new_password">New Password</label>
+                          <input type="password" class="form-control" id="admin_new_password" name="n_admin_new_password"/>                        
+                     </div>
+                     <div class="form-group">
+                          <button type="submit" class="submit">CHANGE PASSWORD</button>
+                     </div>               
+
+                </form>
+           </section>
      </section>
 </div>
 

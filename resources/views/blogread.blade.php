@@ -63,13 +63,26 @@
 </div>
 
 <div class="row padding25">
-      <div class="col-sm-12">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
            <p>&nbsp;</p>
-           <?php 
-           echo $blog_body;
-           ?>
+           <span class="font font20">
+                <?php 
+                     echo $blog_body;
+                ?>
+           </span>
      </div>
+     <div class="col-sm-2"></div>
 </div>
+<div class="row padding25">
+      <div class="col-sm-4"></div>
+     <div class="col-sm-4 text-center">
+         <span><a href="/Aeiety/public/{{$page}}?page={{$page_no}}" class="action">&#129152;</a></span>
+     </div>
+     
+     <div class="col-sm-4"></div>
+</div>
+
 
         
           

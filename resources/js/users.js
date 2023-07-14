@@ -152,7 +152,7 @@ for(i=0;i<getId.length;i++){
               }
               //Submit User Priviledge Form
               document.getElementById("priviledgeForm").addEventListener("submit",setUserPriviledge);
-              
+              document.getElementById("priviledgeForm").reset();     
                     
                                    
          }       
@@ -243,6 +243,37 @@ for(j=0;j<getId1.length;j++){
               }              
               document.getElementById("edit_userForm").addEventListener('submit',edit_user);
               
+             var res3a=document.getElementById('res3a');
+             var token2a=document.getElementById('token2a').value;
+             var editPassword_id=document.getElementById('editPassword_id');
+             editPassword_id.value=id;
+             var user_new_password=document.getElementById('user_new_password');
+
+             
+             document.getElementById('edit_userPassword').onsubmit=function(e){
+                 e.preventDefault();
+                 var fd5a=new FormData();
+                 fd5a.append('n_editPassword_id',editPassword_id.value);
+                 fd5a.append('n_user_new_password',user_new_password.value);
+                 
+                 const xhr5a=new XMLHttpRequest();
+                 xhr5a.open('POST','change_password',true);
+                 xhr5a.setRequestHeader('X-CSRF-TOKEN',token2a);
+                 xhr5a.send(fd5a);
+                 xhr5a.onload=function(){
+                     var returnChgPwd=JSON.parse(xhr5a.response);
+                     var flag=returnChgPwd.flag;
+                     if(flag=='1'){
+                         res3a.innerText="Password Changed Successfully.....";
+                         user_new_password.value="";
+                     }else if(flag=='0'){
+                         res3a.innerText="Could Not Change Password, Try Again.....";
+                     }
+                 }
+                 
+                 
+             }
+             
 
          }
          
@@ -260,6 +291,8 @@ for(j=0;j<getId1.length;j++){
          
      });
 }
+
+
 
 //Delete
 var delId=document.getElementsByClassName("getid2");

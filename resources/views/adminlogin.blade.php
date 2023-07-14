@@ -58,7 +58,7 @@
                      </div>
                 </form> 
                 <p>&nbsp;</p>
-                <p class="font font14">Forgot Password</p>    
+                <p class="font font14"><a href="forgot_password" class="action">Forgot Password</a></p>    
           </section>
 
      </div>
