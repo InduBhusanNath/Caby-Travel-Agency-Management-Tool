@@ -252,6 +252,10 @@ for(j=0;j<getId1.length;j++){
              
              document.getElementById('edit_userPassword').onsubmit=function(e){
                  e.preventDefault();
+                 if(user_new_password.value.length==0){
+                    res3a.innerText="Enter Your New Password.....";
+                    return false;
+                 }
                  var fd5a=new FormData();
                  fd5a.append('n_editPassword_id',editPassword_id.value);
                  fd5a.append('n_user_new_password',user_new_password.value);

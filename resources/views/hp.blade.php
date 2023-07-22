@@ -11,10 +11,14 @@
 
   gtag('config', 'G-00GJQDC7QF');
 </script>
-         <title>Best Taxi Service in Guwahati|Cab Service in Guwahati.....</title>
+         <title>Book Taxi In Guwahati| Best Cab Service In Guwahati|AEIETYTRIPS</title>
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <link rel="icon" href="../public/images/icons/caricon.png" type="image/gif" sizes="16x16">
-         <meta name="description" content="We offer the best taxi service in Guwahati for local and outstation trips. Our cab service in Guwahati is distinguished by the most affordable fares. "/>
+         <meta name="description" content="Book taxi in Guwahati from the provider of the best cab service in Guwahati. At AEIETYTRIPS, we ensure a pleasant and safe taxi trip at affordable fares."/>
+         <meta property="og:title" content="Aeiety Trips"/>
+         <meta property="og:image" content="https://aeiety.com/Aeiety/public/images/logo/logo.png"/>
+         <meta property="og:description" content="The most affordable taxi service in Guwahati for local and outstation trips."/>
+        
          <link rel="stylesheet" href="{{URL::asset('../resources/css/app.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/font.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/form.css')}}"/>
@@ -150,12 +154,12 @@
            <section class="background-lightgoldenrodyellow padding10" style="border-radius:12px 12px 12px 12px;">
                 <span class="font fone24 lead"><b>What We Do</b></span>
                 <br/><br/>
-                <h3>We Provide Top-Quality Taxi Rental Services At Affordable Fares</h3>
+                <h3>We Provide The Best Cab Service In Guwahati At Affordable Fares</h3>
                 <br/>
                 <span class="font font22 lead">
-                     <p>At Aeiety Trips, we provide the most affordable taxi services, which are best-in-class in terms of quality.</p>
+                     <p>At Aeiety Trips, we are committed to provide the best taxi service in Guwahati. The excellence is our dedicated cab service in Guwahati emanates from the top service quality at affordable fares. Given our taxi fare structure, we can confidently claim to provide the most affordable cab service in Guwahati.  </p>
                  
-                     <p>Get efficient,trusted and timely taxi rentals for your trip. We provide small, medium and luxury cars to rent at affordable prices.</p>
+                     <p>Book taxi in Guwahati from us to get efficient,trusted and timely taxi rentals for your trip. We provide small, medium and luxury cars to rent at affordable prices.</p>
                  
                      <p>We prioritise safety and punctuality in our services above everything else to give you a trusted and best experience.</p>
                  
@@ -201,7 +205,7 @@
            <div class="card border-white bg-transparent rounded" >
                 <div class="card-body background-aliceblue">                     
                      <span class="font font18 lead text-center">
-                          Regardless of where you want to go, we have the coresponding taxi service for you.
+                          Regardless of where you want to go, we have the coresponding taxi service in Guwahati for you.
                           <br/><b>Want to Know What We Have For You?</b>
                                <br/>
                                <span class="font font18 padding5" style="background-color:orange;border-radius:12px 12px 12px 12px;"><a href="contactus" class="color-black action"><b><i class="fa-regular fa-hand-point-right"></i>&nbsp;Reach Out To Us</b></a></span>
@@ -265,7 +269,7 @@
                 <div class="card-body">
                     <h4><i class="fa-solid fa-money-bill"></i>&nbsp;Affordable</h4>
                     <span class="lead font font18">
-                          Get the most affordable taxi services, gaining the best value for your money and time. Also, quality is associated with affordability.
+                          Get the most affordable cab services in Guwahati, gaining the best value for your money and time. Also, quality is associated with affordability.
 
                     </span>
                     <p>&nbsp;</p>                   

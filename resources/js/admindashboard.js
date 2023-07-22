@@ -47,7 +47,7 @@ change_admin_password_form.onsubmit=function(e){
      xhr1.setRequestHeader('X-CSRF-TOKEN',csrf_token);
      xhr1.send(fd1);
      xhr1.onload=function(){
-             alert(xhr1.response);
+             
          var responsePwd=JSON.parse(xhr1.responseText);
          var flag=responsePwd.flag;        
          

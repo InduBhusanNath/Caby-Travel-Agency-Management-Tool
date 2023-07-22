@@ -11,7 +11,7 @@
 
   gtag('config', 'G-00GJQDC7QF');
 </script>
-         <title>Taxi Service in Guwahati for Outstation|Taxi Rental in Guwahati.....</title>
+         <title>Outstation Taxi Service In Guwahati| Taxi Rental In Guwahati|AEIETYTRIPS</title>
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <link rel="icon" href="../public/images/icons/caricon.png" type="image/gif" sizes="16x16">
          <meta name="description" content="{{$blog_meta_tag}}"/>

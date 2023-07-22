@@ -62,7 +62,7 @@ Route::get('/taxiBooking',[taxiBookingController::class,'showRequestData']);
 Route::get('/process_taxiBooking/{id}',[taxiBookingController::class,'showTaxiBookingRequestStatus']);
 Route::get('/blogPosts',[blogsController::class,'blogPostPage']);
 Route::get('/blog_show/id/{id}/page/{page}/page_no/{page_no}',[blogsController::class,'blogShow']);
-
+Route::get('/blogs',[blogsController::class,'displayBlogs']);
 
 
 

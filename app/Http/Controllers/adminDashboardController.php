@@ -53,7 +53,7 @@ class adminDashboardController extends Controller
                     ]);
                
                 }
-           }else if($chk_rows==0){
+           }else {
                 return response()->json([
                     'flag'=>'0'
                 ]);

@@ -11,10 +11,10 @@
 
   gtag('config', 'G-00GJQDC7QF');
 </script>
-         <title>Guwahati Taxi Service|Best Cab Service in Guwahati</title>
+         <title>Taxi Service in Guwahati|Cab Service In Guwahati|AEIETYTRIPS</title>
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <link rel="icon" href="../public/images/icons/caricon.png" type="image/gif" sizes="16x16">
-         <meta name="description" content="Contact for the best cab service in Guwahati, trusted Guwahati taxi service."/>
+         <meta name="description" content="Looking for a taxi service in Guwahati? Get in touch with us. We provide the best cab service in Guwahati for all types of trips. "/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/app.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/font.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/form.css')}}"/>

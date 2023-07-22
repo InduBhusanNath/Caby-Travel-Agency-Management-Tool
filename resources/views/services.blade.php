@@ -11,10 +11,10 @@
 
   gtag('config', 'G-00GJQDC7QF');
 </script>
-         <title>Book Taxi in Guwahati|Taxi Service in Guwahati</title>
+         <title>Local Taxi Service In Guwahati|Taxi Service In Guwahati For Outstation|AEIETYTRIPS</title>
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <link rel="icon" href="../public/images/icons/caricon.png" type="image/gif" sizes="16x16">
-         <meta name="description" content="Trusted platform to book a book taxi in Guwahati, offering the best taxi service in Guwahati."/>
+         <meta name="description" content="Experience comfort, convenience, and affordability in taxi trips. We provide excellent local taxi service in Guwahati, and taxi service in Guwahati for outstation."/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/app.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/font.css')}}"/>
          <link rel="stylesheet" href="{{URL::asset('../resources/css/form.css')}}"/>
@@ -67,6 +67,7 @@
                 <p>You can get small, medium, and large cars for local or outstation trips within Assam and the North Eastern region of India at affordable fares.</p>
                 <p>We prioritze safety and punctuality in our taxi rental services, aimed at giving you a trusted and satisfying experience.</p>
                 <p>So,if you are looking to hire a taxi to go to any place in Assam and the North East,get in touch with and discuss your travel needs, we will do the needful in no time.</p>
+                <p>We provide excellent taxi service in Guwahati for outstation and local taxi service in Guwahati.</p>
            </section>
 
       </div>

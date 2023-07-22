@@ -9,7 +9,15 @@ use Illuminate\View\View;
 
 class blogsController extends Controller
 {
-    //Show Blog Post Page
+    //Display Blogs on View Page
+    public function displayBlogs(){
+         $displayBlogs=DB::table('table_blogs')->orderBy('entry_date','desc')->get();
+         $displayBlogs=DB::table('table_blogs')->paginate(12);
+         return view('/blogs',['displayBlogs'=>$displayBlogs]);
+
+    }
+    
+    //Show  Blog Post Page
     public function blogPostPage(Request $request){
         if(!session('adminuser')){
             return redirect()->route('adminlogin');
